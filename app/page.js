@@ -86,12 +86,14 @@ export default function Home() {
           <h2 className={`${lobster.className} text-[40px]  mb-4 `}>
             Bienvenue au Chalet Remy
           </h2>
-          <p className={`${comforta.className} text-[20px] mb-8 font-poppin`}>
+          <p
+            className={`${comforta.className} text-[15x] mb-8 font-poppin  text-white`}
+          >
             Saint Gervais les Bains - 26 personnes
           </p>
           <a
             href="#discover"
-            className={` ${comforta.className} px-6 py-3 font-poppin text-white  border-white border-2  rounded hover:bg-white hover:text-black`}
+            className={` ${comforta.className} px-6 py-3 text-sm  shadow-md tracking-wider font-poppin text-white  border-white border-[1px]  rounded-lg hover:bg-white hover:text-black`}
           >
             découvrir
           </a>
@@ -128,7 +130,7 @@ export default function Home() {
         id="contact"
         className={`${lobster.className} h-5/6  flex  justify-center items-center bg-slate-100 mx-auto`}
       >
-        <p className="text-[80px]">about</p>
+        <p className="text-[80px]">contact</p>
       </div>
       <Arrow />
     </div>
