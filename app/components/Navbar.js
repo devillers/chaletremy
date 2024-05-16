@@ -9,8 +9,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="p-4">
-      <div className="absolute top-8 right-10 space-x-4">
+    <nav className="p-4 ">
+      <div className="fixed top-8 right-10 space-x-4">
         <div className="block lg:hidden">
           <button
             onClick={toggleMenu}
@@ -46,19 +46,19 @@ export default function Navbar() {
           <div className="text-sm lg:flex-grow">
             <Link
               href="/"
-              className="text-sm block mt-4 lg:inline-block lg:mt-0 uppercase  text-white hover:text-gray-400 mr-4"
+              className="text-sm block mt-4 lg:inline-block lg:mt-0 uppercase  text-white hover:text-gray-900 mr-4"
             >
               Home
             </Link>
             <Link
-              href="/about"
-              className="block mt-4 lg:inline-block lg:mt-0 uppercase  text-white hover:text-gray-400 mr-4"
+              href="#about"
+              className="block mt-4 lg:inline-block lg:mt-0 uppercase  text-white hover:text-gray-900 mr-4"
             >
               About
             </Link>
             <Link
-              href="/contact"
-              className="block mt-4 lg:inline-block lg:mt-0 uppercase  text-white hover:text-gray-400 mr-4"
+              href="#contact"
+              className="block mt-4 lg:inline-block lg:mt-0 uppercase  text-white hover:text-gray-900 mr-4"
             >
               Contact
             </Link>

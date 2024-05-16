@@ -2,6 +2,7 @@
 import { comforta, lobster } from './font';
 import Image from 'next/image';
 import Navbar from './components/Navbar';
+import Arrow from './components/ArrowUp';
 
 // const robotoMono = Roboto_Mono({
 //   subsets: ['latin'],
@@ -10,7 +11,7 @@ import Navbar from './components/Navbar';
 
 export default function Home() {
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-screen ">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -116,6 +117,20 @@ export default function Home() {
           <p>&copy; 2024 Chalet Remy. All rights reserved.</p>
         </div>
       </footer> */}
+
+      <div
+        id="about"
+        className={`${lobster.className} h-5/6  flex  justify-center items-center bg-slate-100 mx-auto`}
+      >
+        <p className="text-[80px]">about</p>
+      </div>
+      <div
+        id="contact"
+        className={`${lobster.className} h-5/6  flex  justify-center items-center bg-slate-100 mx-auto`}
+      >
+        <p className="text-[80px]">about</p>
+      </div>
+      <Arrow />
     </div>
   );
 }
