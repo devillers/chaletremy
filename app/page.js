@@ -50,10 +50,12 @@ export default function Home() {
             Saint Gervais les Bains - 26 personnes
           </p>
           <a
-            href="#discover"
-            className={` ${comforta.className} px-6 py-3 text-sm  shadow-md tracking-wider font-poppin text-white  border-white border-[1px]  rounded-lg hover:bg-white hover:text-black`}
+            href="https://chalet-remy.lodgify.com/fr/chalet-remy-chalet-prestige-face-au-mont-blanc-1426-pers"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={` ${comforta.className} px-6 py-3 text-sm  shadow-md tracking-wider font-poppin text-white  border-white border-[1px]  rounded-lg hover:bg-white hover:bg-opacity-25 hover:text-black `}
           >
-            découvrir
+            réserver
           </a>
         </section>
       </div>
