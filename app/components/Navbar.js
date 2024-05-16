@@ -45,7 +45,7 @@ export default function Navbar() {
         >
           <div className="text-sm lg:flex-grow">
             <Link
-              href="/"
+              href="#home"
               className="text-sm block mt-4 lg:inline-block lg:mt-0 uppercase  text-white hover:text-gray-900 mr-4"
             >
               Home
