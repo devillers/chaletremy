@@ -17,7 +17,7 @@ export default function Home() {
           priority
           className="object-cover w-full h-full"
         />
-        <div className="absolute inset-0 bg-black opacity-20"></div>
+        {/* <div className="absolute inset-0 bg-black opacity-20"></div> */}
       </div>
 
       {/* Content */}
