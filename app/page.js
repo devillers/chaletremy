@@ -1,7 +1,12 @@
 'use client';
-
+import { comforta, lobster } from './font';
 import Image from 'next/image';
 import Navbar from './components/Navbar';
+
+// const robotoMono = Roboto_Mono({
+//   subsets: ['latin'],
+//   weight: '400', // You can specify weights like '400', '700', etc. if needed
+// });
 
 export default function Home() {
   return (
@@ -77,15 +82,15 @@ export default function Home() {
 
         {/* Main Text */}
         <div className="text-center">
-          <h2 className="text-[60px]  mb-4 font-lobster">
+          <h2 className={`${lobster.className} text-[40px]  mb-4 `}>
             Bienvenue au Chalet Remy
           </h2>
-          <p className="text-[20px] mb-8 font-poppin">
+          <p className={`${comforta.className} text-[20px] mb-8 font-poppin`}>
             Saint Gervais les Bains - 26 personnes
           </p>
           <a
             href="#discover"
-            className="px-6 py-3 font-poppin text-white  border-white border-2  rounded hover:bg-white hover:text-black"
+            className={` ${comforta.className} px-6 py-3 font-poppin text-white  border-white border-2  rounded hover:bg-white hover:text-black`}
           >
             découvrir
           </a>
