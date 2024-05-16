@@ -62,13 +62,13 @@ export default function Home() {
 
       <div
         id="about"
-        className={`${lobster.className} h-5/6  flex  justify-center items-center bg-slate-100 mx-auto`}
+        className={`${lobster.className} h-screen  flex  justify-center items-center bg-slate-100 mx-auto`}
       >
         <p className="text-[80px]">about</p>
       </div>
       <div
         id="contact"
-        className={`${lobster.className} h-5/6  flex  justify-center items-center bg-slate-100 mx-auto`}
+        className={`${lobster.className} h-screen flex  justify-center items-center bg-slate-100 mx-auto`}
       >
         <p className="text-[80px]">contact</p>
       </div>
