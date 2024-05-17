@@ -3,11 +3,10 @@ import { comforta, lobster } from './font';
 import Image from 'next/image';
 import Navbar from './components/Navbar';
 import Arrow from './components/ArrowUp';
-import Contact from './components/Contact';
 
 export default function Home() {
   return (
-    <div id="#home" className="relative h-screen ">
+    <div id="home" className="relative h-screen w-full">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -23,30 +22,14 @@ export default function Home() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
-        {/* Logo */}
-        <div className="absolute top-8 left-8">
-          <Image
-            src="/logo.png" // replace with your image path
-            alt="Luxury Chalet"
-            // layout="fill"
-            objectFit="cover"
-            quality={100}
-            height={100}
-            width={100}
-            priority
-            className="object-cover"
-          />
-        </div>
-
+      <div className="relative z-10 flex flex-col items-center justify-center h-full w-full mx-auto">
         <Navbar />
-
         <section className="text-center">
-          <h2 className={`${lobster.className} text-[40px]  mb-4 `}>
+          <h2 className={`${lobster.className} text-[40px] mb-4 text-white`}>
             Bienvenue au Chalet Remy
           </h2>
           <p
-            className={`${comforta.className} text-[15x] mb-8 font-poppin  text-white`}
+            className={`${comforta.className} text-[15px] mb-8 font-poppin text-white`}
           >
             Saint Gervais les Bains - 26 personnes
           </p>
@@ -54,7 +37,7 @@ export default function Home() {
             href="https://chalet-remy.lodgify.com/fr/chalet-remy-chalet-prestige-face-au-mont-blanc-1426-pers"
             target="_blank"
             rel="noopener noreferrer"
-            className={` ${comforta.className} px-6 py-3 text-sm  shadow-md tracking-wider font-poppin text-white  border-white border-[1px]  rounded-lg hover:bg-white hover:bg-opacity-25 hover:text-black `}
+            className={`${comforta.className} px-6 py-3 text-sm shadow-md tracking-wider font-poppin text-white border-white border-[1px] rounded-lg hover:bg-white hover:bg-opacity-25 hover:text-black`}
           >
             réserver
           </a>
@@ -63,12 +46,16 @@ export default function Home() {
 
       <div
         id="about"
-        className={`${lobster.className} h-screen  flex  justify-center items-center bg-slate-100 mx-auto`}
+        className={`${lobster.className} h-screen flex justify-center items-center bg-slate-100`}
       >
         <p className="text-[80px]">about</p>
       </div>
-      <div id="contact" className="h-screen flex  flex-col mx-auto container">
-        <p className={`${comforta.className}  text-[50px]`}>contact</p>
+
+      <div
+        id="contact"
+        className="h-screen flex flex-col justify-center items-center mx-auto"
+      >
+        <p className={`${comforta.className} text-[50px]`}>contact</p>
         {/* <Contact /> */}
       </div>
       <Arrow />

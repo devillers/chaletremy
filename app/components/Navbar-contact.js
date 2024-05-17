@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -9,12 +10,11 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="p-4 ">
+    <nav className="p-4">
       <div className="absolute top-8 left-8">
         <Image
           src="/logo.png" // replace with your image path
           alt="Luxury Chalet"
-          // layout="fill"
           objectFit="cover"
           quality={100}
           height={100}
@@ -27,11 +27,11 @@ export default function Navbar() {
         <div className="block lg:hidden">
           <button
             onClick={toggleMenu}
-            className="text-white focus:outline-none relative"
+            className="text-black focus:outline-none relative"
           >
             <div className="relative w-6 h-6 flex items-center justify-center">
               <svg
-                className={`absolute w-6 h-6 transition-transform duration-300 transform ${
+                className={`absolute w-6 h-6 transition-transform duration-300 transform text-black ${
                   isOpen ? 'rotate-45 translate-x-[100px]' : ''
                 }`}
                 fill="none"
@@ -59,19 +59,19 @@ export default function Navbar() {
           <div className="text-sm lg:flex-grow">
             <Link
               href="#home"
-              className="text-sm block mt-4 lg:inline-block lg:mt-0 uppercase  text-white hover:text-gray-900 mr-4"
+              className="text-sm block mt-4 lg:inline-block lg:mt-0 uppercase text-black hover:text-gray-900 mr-4"
             >
               Home
             </Link>
             <Link
               href="#about"
-              className="block mt-4 lg:inline-block lg:mt-0 uppercase  text-white hover:text-gray-900 mr-4"
+              className="block mt-4 lg:inline-block lg:mt-0 uppercase text-black hover:text-gray-900 mr-4"
             >
               About
             </Link>
             <Link
               href="#contact"
-              className="block mt-4 lg:inline-block lg:mt-0 uppercase  text-white hover:text-gray-900 mr-4"
+              className="block mt-4 lg:inline-block lg:mt-0 uppercase text-black hover:text-gray-900 mr-4"
             >
               Contact
             </Link>
