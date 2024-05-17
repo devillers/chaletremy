@@ -3,6 +3,7 @@ import { comforta, lobster } from './font';
 import Image from 'next/image';
 import Navbar from './components/Navbar';
 import Arrow from './components/ArrowUp';
+import Contact from './components/Contact';
 
 export default function Home() {
   return (
@@ -66,11 +67,9 @@ export default function Home() {
       >
         <p className="text-[80px]">about</p>
       </div>
-      <div
-        id="contact"
-        className={`${lobster.className} h-screen flex  justify-center items-center bg-slate-100 mx-auto`}
-      >
-        <p className="text-[80px]">contact</p>
+      <div id="contact" className="h-screen flex  flex-col mx-auto container">
+        <p className={`${comforta.className}  text-[50px]`}>contact</p>
+        {/* <Contact /> */}
       </div>
       <Arrow />
       {/* Footer */}
