@@ -4,45 +4,40 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <section className="flex flex-col md:flex-row justify-between bg-white-6">
-      <div className="w-full md:w-1/3 p-2">
-        <p
-          className={`${Cave.className} text-justify text-[20px] text-white leading-6`}
-        >
-          A 1 450 m d’altitude, au pied des pistes, face au majestueux
-          Mont-Blanc, le CHALET RÉMY, lieu emblématique du Bettex s’ouvre à la
-          location pour vos retrouvailles familiales, vos moments entre amis ou
-          encore vos séminaires professionnels.{' '}
-          {/* Après une longue et méticuleuse
-          réhabilitation conduite par temA architectes et by ; intérieurs
-          d’architectes, le CHALET et son APPARTEMENT indépendant, intégralement
-          rénovés avec des matériaux haut de gamme, vous offrent un moment de
-          vie unique et inoubliable. */}
-        </p>
-      </div>
-      <div className="w-full md:w-1/3 p-2 flex items-center justify-center">
+    <section className="flex flex-col items-center bg-white mt-5">
+      <div className="w-full  p-2 flex items-center justify-center">
         <Image
           src="/chalet-remy-logo-big.png" // replace with your image path
           alt="Luxury Chalet"
           objectFit="cover"
           quality={100}
-          height={200}
-          width={200}
+          height={100}
+          width={100}
           className="object-cover"
         />
       </div>
-      <div className="w-full md:w-1/3 p-2 text-white text-[12px] uppercase text-center">
-        <ul className="space-y-2">
-          <li className="cursor-pointer">
-            <Link href="/">Home</Link>
-          </li>
-          <li>le chalet</li>
-          <li>l'appartement</li>
-          <li>contact</li>
-          <li>mentions légales</li>
-          <li>plan du site</li>
-        </ul>
+      <div className="w-full p-2 text-black text-[10px] uppercase ">
+        <div className="flex flex-row  justify-center">
+        <Link href="/" className={`${comforta.className}cursor-pointer px-2`}>
+            Home{' '}
+          </Link>
+          <Link href="/" className={`${comforta.className}cursor-pointer px-2`}>
+            Le Chalet{' '}
+          </Link>
+          <Link href="/" className={`${comforta.className}cursor-pointer px-2`}>
+            L'appartement{' '}
+          </Link>
+          <Link href="/" className={`${comforta.className}cursor-pointer px-2`}>
+            Mentions Légales{' '}
+          </Link>
+          <Link href="/" className={`${comforta.className}cursor-pointer px-2`}>
+            Plan du Site{' '}
+          </Link>
+        </div>
       </div>
+      <p className={`${comforta.className} text-[10px] uppercase my-5`}>
+        copyright @ chalet remy 2023
+      </p>
     </section>
   );
 }

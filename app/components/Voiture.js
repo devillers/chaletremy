@@ -41,7 +41,7 @@ export default function Voiture() {
         <div className="p-2">
           {data.map((row, index) => (
             <div>
-              <a className=" text-[10px] text-gray-500 uppercase">
+              <a className=" text-[10px] text-pink-500 uppercase">
                 {row.column1}
               </a>
               <div
