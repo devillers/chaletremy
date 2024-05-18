@@ -62,7 +62,10 @@ export default function ContactPage() {
               {/* <Map address={address} /> */}
             </div>
             <div className="mt-10 md:w-1/2 md:mt-auto">
-              <form className="space-y-6 text-[13px] " onSubmit={handleSubmit}>
+              <form
+                className="space-y-6 text-[12px] md:text-[13px] "
+                onSubmit={handleSubmit}
+              >
                 <div>
                   <label
                     htmlFor="name"
