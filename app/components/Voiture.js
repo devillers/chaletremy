@@ -37,21 +37,21 @@ export default function Voiture() {
   return (
     <div className="overflow-x-auto">
       <div className="min-w-full bg-white  w-full">
-        <h4 className="uppercase text-[20px] mt-5">en voiture </h4>
+        <h4 className="uppercase text-[15px] md:text-[20px] mt-5">
+          en voiture{' '}
+        </h4>
         <div className="p-2">
           {data.map((row, index) => (
-            <div>
-              <a className=" text-[10px] text-pink-500 uppercase">
-                {row.column1}
-              </a>
+            <div className="pt-2 text-[10px] md:text-[12px]">
+              <a className="  text-yellow-800 uppercase">{row.column1}</a>
               <div
                 key={index}
                 className={`${comforta.className} p-2 flex justify-between`}
               >
-                <a className=" text-[10px] font-light tracking-wide text-gray-900">
+                <a className=" font-light tracking-wide text-gray-900">
                   {row.column2}
                 </a>
-                <a className=" text-[10px] text-gray-500">{row.column3}</a>
+                <a className=" text-gray-500">{row.column3}</a>
               </div>
 
               <hr />
