@@ -2,7 +2,10 @@
 import { comforta, lobster } from '../font';
 import { useState } from 'react';
 import Navbar from '../components/Navbar-contact';
-import Array from '../components/Array';
+import Plane from '../components/Plane';
+import Train from '../components/Train';
+import Voiture from '../components/Voiture';
+import Helico from '../components/Helico';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -36,13 +39,13 @@ export default function ContactPage() {
     <div className="min-h-screen flex flex-col items-center justify-center">
       <Navbar />
       <div className="w-full mt-[90px] lg:w-full max-w-4xl space-y-8 p-4">
-        <div className="mt-5">
-          <h1 className={`${lobster.className} text-3xl mb-1`}>Chalet Remy</h1>
+        <div className="mt-5 ml-5 text-slate-600">
+          <h1 className={`${lobster.className} text-3xl mb-1 `}>Chalet Remy</h1>
           <hr />
-          <p className={`${comforta.className} text-sm mt-3`}>
+          <p className={`${comforta.className} text-[10px] mt-3`}>
             520 route des communailles
           </p>
-          <p className={`${comforta.className} text-sm mt-1`}>
+          <p className={`${comforta.className} text-[10px] mt-1`}>
             74170 Saint Gervais les Bains
           </p>
         </div>
@@ -51,11 +54,11 @@ export default function ContactPage() {
             <img
               src="/plan.png"
               alt="Form Image"
-              className="w-full h-auto rounded-md"
+              className="w-full h-auto rounded-sm"
             />
             {/* <Map address={address} /> */}
           </div>
-          <div className="md:w-1/2">
+          <div className="mt-10 md:w-1/2 md:mt-auto">
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label
@@ -71,7 +74,7 @@ export default function ContactPage() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="mt-1 p-2 w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  className="mt-1 p-2 w-full border border-gray-300 rounded-sm shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 />
               </div>
               <div>
@@ -88,7 +91,7 @@ export default function ContactPage() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="mt-1 p-2 w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  className="mt-1 p-2 w-full border border-gray-300 rounded-sm shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 />
               </div>
               <div>
@@ -104,24 +107,30 @@ export default function ContactPage() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="mt-1 p-2 w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                  className="mt-1 p-2 w-full border border-gray-300 rounded-sm shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 />
               </div>
               <div>
                 <button
                   type="submit"
-                  className={`${comforta.className} w-full flex justify-center py-2 px-4  rounded-md shadow-sm text-sm font-medium text-yellow-800 border-[1px] border-yellow-700`}
+                  className={`${comforta.className} w-full flex justify-center py-2 px-4  rounded-sm shadow-sm text-sm font-medium text-yellow-800 border-[1px] border-yellow-700`}
                 >
                   Envoyer
                 </button>
               </div>
-              {status && <p className="text-sm text-gray-600">{status}</p>}
+              {status && (
+                <p className="text-sm text-white  p-3  rounded-sm  bg-pink-600">
+                  {status}
+                </p>
+              )}
             </form>
           </div>
         </div>
         <div className="w-[90%] mx-auto">
-          <h4 className="uppercase text-[25px]">en avion </h4>
-          <Array />
+          <Plane />
+          <Train />
+          <Voiture />
+          <Helico />
         </div>
       </div>
     </div>

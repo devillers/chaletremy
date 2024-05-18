@@ -1,4 +1,10 @@
-import { Inter, Roboto_Mono, Lobster, Comfortaa } from 'next/font/google';
+import {
+  Inter,
+  Roboto_Mono,
+  Lobster,
+  Comfortaa,
+  Caveat,
+} from 'next/font/google';
 
 export const inter = Inter({
   subsets: ['latin'],
@@ -16,4 +22,9 @@ export const lobster = Lobster({
 export const comforta = Comfortaa({
   subsets: ['latin'],
   weight: '300',
+});
+
+export const Cave = Caveat({
+  subsets: ['latin'],
+  weight: '400',
 });

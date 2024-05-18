@@ -15,20 +15,22 @@ export async function POST(req) {
   const mailOptions = {
     from: email, // Email address of the form submitter
     to: process.env.RECIPIENT_EMAIL, // Your recipient email address
-    subject: `Contact Form Submission from ${name}`,
+    subject: `Demande de renseignements de  ${name}`,
     text: message,
   };
 
   try {
     await transporter.sendMail(mailOptions);
-    return new Response(
-      JSON.stringify({ message: 'Message sent successfully' }),
-      { status: 200 }
-    );
+    return new Response(JSON.stringify({ message: 'Message envoyé' }), {
+      status: 200,
+    });
   } catch (error) {
     console.error('Error sending email:', error);
-    return new Response(JSON.stringify({ message: 'Error sending message' }), {
-      status: 500,
-    });
+    return new Response(
+      JSON.stringify({ message: 'une erreur s&eacute; est produite' }),
+      {
+        status: 500,
+      }
+    );
   }
 }

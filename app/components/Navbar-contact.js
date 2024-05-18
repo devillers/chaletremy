@@ -15,6 +15,7 @@ export default function Navbar() {
         <Image
           src="/logo.png" // replace with your image path
           alt="Luxury Chalet"
+          // layout="fill"
           objectFit="cover"
           quality={100}
           height={100}

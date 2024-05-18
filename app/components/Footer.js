@@ -1,22 +1,23 @@
-import { comforta, lobster } from '../font';
+import { comforta, Cave } from '../font';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <section className="flex flex-col md:flex-row justify-between bg-slate-600 p-6">
+    <section className="flex flex-col md:flex-row justify-between bg-white-6">
       <div className="w-full md:w-1/3 p-2">
         <p
-          className={`${comforta.className} text-justify text-[12px] text-white leading-6`}
+          className={`${Cave.className} text-justify text-[20px] text-white leading-6`}
         >
           A 1 450 m d’altitude, au pied des pistes, face au majestueux
           Mont-Blanc, le CHALET RÉMY, lieu emblématique du Bettex s’ouvre à la
           location pour vos retrouvailles familiales, vos moments entre amis ou
-          encore vos séminaires professionnels. Après une longue et méticuleuse
+          encore vos séminaires professionnels.{' '}
+          {/* Après une longue et méticuleuse
           réhabilitation conduite par temA architectes et by ; intérieurs
           d’architectes, le CHALET et son APPARTEMENT indépendant, intégralement
           rénovés avec des matériaux haut de gamme, vous offrent un moment de
-          vie unique et inoubliable.
+          vie unique et inoubliable. */}
         </p>
       </div>
       <div className="w-full md:w-1/3 p-2 flex items-center justify-center">

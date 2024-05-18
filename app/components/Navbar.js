@@ -61,13 +61,13 @@ export default function Navbar() {
               href="/"
               className="text-sm block mt-4 lg:inline-block lg:mt-0 uppercase  text-white hover:text-gray-900 mr-4"
             >
-              Home
+              Accueil
             </Link>
             <Link
               href="/about"
               className="block mt-4 lg:inline-block lg:mt-0 uppercase  text-white hover:text-gray-900 mr-4"
             >
-              About
+              A propos
             </Link>
             <Link
               href="/contact"
