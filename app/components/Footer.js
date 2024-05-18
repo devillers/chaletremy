@@ -18,7 +18,7 @@ export default function Footer() {
       </div>
       <div className="w-full p-2 text-black text-[10px] uppercase ">
         <div className="flex flex-row  justify-center">
-        <Link href="/" className={`${comforta.className}cursor-pointer px-2`}>
+          {/* <Link href="/" className={`${comforta.className}cursor-pointer px-2`}>
             Home{' '}
           </Link>
           <Link href="/" className={`${comforta.className}cursor-pointer px-2`}>
@@ -26,7 +26,7 @@ export default function Footer() {
           </Link>
           <Link href="/" className={`${comforta.className}cursor-pointer px-2`}>
             L'appartement{' '}
-          </Link>
+          </Link> */}
           <Link href="/" className={`${comforta.className}cursor-pointer px-2`}>
             Mentions Légales{' '}
           </Link>
