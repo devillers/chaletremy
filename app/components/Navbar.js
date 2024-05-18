@@ -40,7 +40,7 @@ const Navbar = () => {
         !isNavbarVisible && scrollPosition > 50 ? 'opacity-0' : 'opacity-100'
       }`}
     >
-      <div className=" backdrop-blur-lg shadow-lg transition backdrop-filter duration-500">
+      <div className=" bg-white backdrop-blur-lg shadow-lg transition backdrop-filter duration-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -48,11 +48,11 @@ const Navbar = () => {
                 <Link href="/">
                   <div className="flex items-center cursor-pointer">
                     <Image src="/logo.png" alt="Logo" width={40} height={40} />
-                    <span
+                    {/* <span
                       className={`${lobster.className} ml-4 text-2xl font-bold text-slate-600 tracking-wide`}
                     >
                       Chalet Remy
-                    </span>
+                    </span> */}
                   </div>
                 </Link>
               </div>
@@ -114,14 +114,14 @@ const Navbar = () => {
                 <span
                   className={`${comforta.className} text-gray-800 hover:text-gray-600 block px-3 py-2  cursor-pointer  text-[13px]`}
                 >
-                  Home
+                  Accueil
                 </span>
               </Link>
-              <Link href="/about">
+              <Link href="/flat">
                 <span
                   className={`${comforta.className} text-gray-800 hover:text-gray-600 block px-3 py-2  cursor-pointer  text-[13px]`}
                 >
-                  About
+                  L'appartement
                 </span>
               </Link>
               <Link href="/contact">
