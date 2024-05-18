@@ -22,7 +22,7 @@ export default function Table() {
 
   return (
     <div className="overflow-x-auto">
-      <table className="min-w-full bg-white  w-full">
+      <div className="min-w-full bg-white  w-full">
         {/* <thead>
           <tr>
             <th className="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -63,7 +63,7 @@ export default function Table() {
             </div>
           ))}
         </div>
-      </table>
+      </div>
     </div>
   );
 }

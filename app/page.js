@@ -3,6 +3,8 @@ import { comforta, lobster } from './font';
 import Image from 'next/image';
 import Navbar from './components/Navbar';
 import Arrow from './components/ArrowUp';
+import Footer from './components/Footer';
+import ArrowDown from './components/ArrowDown';
 
 export default function Home() {
   return (
@@ -33,14 +35,15 @@ export default function Home() {
           >
             Saint Gervais les Bains - 26 personnes
           </p>
-          <a
+          {/* <a
             href="https://chalet-remy.lodgify.com/fr/chalet-remy-chalet-prestige-face-au-mont-blanc-1426-pers"
             target="_blank"
             rel="noopener noreferrer"
             className={`${comforta.className} px-6 py-3 text-sm shadow-md tracking-wider font-poppin text-white border-white border-[1px] rounded-lg hover:bg-white hover:bg-opacity-25 hover:text-black`}
           >
             réserver
-          </a>
+          </a> */}
+          <ArrowDown />
         </section>
       </div>
 
@@ -51,15 +54,15 @@ export default function Home() {
         <p className="text-[80px]">about</p>
       </div>
 
-      <div
+      {/* <div
         id="contact"
         className="h-screen flex flex-col justify-center items-center mx-auto"
       >
         <p className={`${comforta.className} text-[50px]`}>contact</p>
-        {/* <Contact /> */}
-      </div>
+      
+      </div> */}
       <Arrow />
-      {/* Footer */}
+      <Footer />
     </div>
   );
 }
