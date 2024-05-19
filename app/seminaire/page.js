@@ -1,26 +1,15 @@
 'use client';
-import { comforta, lobster } from './font';
+import { comforta, lobster } from '../font';
 import Image from 'next/image';
-import Navbar from './components/Navbar';
-import Arrow from './components/ArrowUp';
-import Footer from './components/Footer';
-import ArrowDown from './components/ArrowDown';
+import Navbar from '../components/Navbar';
+import Arrow from '../components/ArrowUp';
+import Footer from '../components/Footer';
+import ArrowDown from '../components/ArrowDown';
 
 export default function Home() {
   return (
     <div id="home" className="relative h-screen w-full">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/chalet-remy0.jpg"
-          alt="Luxury Chalet"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-          quality={100}
-          priority
-          className="object-cover w-full h-full "
-        />
+      <div className="absolute inset-0 z-0 bg-chalet-remy bg-center bg-cover">
         <div className="absolute inset-0 bg-black opacity-10"></div>
       </div>
 
@@ -42,7 +31,7 @@ export default function Home() {
 
       <div
         id="about"
-        className={`${lobster.className} h-screen flex justify-center items-center bg-slate-100`}
+        className={`${lobster.className} h-screen flex justify-center items-center bg-white`}
       >
         <p className="text-[80px]">about</p>
       </div>

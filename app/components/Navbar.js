@@ -41,7 +41,7 @@ const Navbar = () => {
       }`}
     >
       {/* <div className=" bg-white backdrop-blur-lg shadow-md transition backdrop-filter duration-500"> */}
-      <div className=" bg-white  shadow-md transition backdrop-filter duration-500">
+      <div className=" shadow-md transition backdrop-filter duration-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -61,42 +61,42 @@ const Navbar = () => {
                 <div className="ml-10 flex items-baseline space-x-4">
                   <Link href="/">
                     <span
-                      className={`${comforta.className} text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium cursor-pointer`}
+                      className={`${comforta.className} uppercase text-white hover:text-gray-600 px-3 py-2 rounded-md text-[12px] font-medium cursor-pointer`}
                     >
                       Accueil
                     </span>
                   </Link>
                   <Link href="/flat">
                     <span
-                      className={`${comforta.className} text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium cursor-pointer`}
+                      className={`${comforta.className} uppercase text-white hover:text-gray-600 px-3 py-2 rounded-md text-[12px] font-medium cursor-pointer`}
                     >
                       L'appartement
                     </span>
                   </Link>
                   <Link href="/contact">
                     <span
-                      className={`${comforta.className} text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium cursor-pointer`}
+                      className={`${comforta.className} uppercase text-white hover:text-gray-600 px-3 py-2 rounded-md text-[12px] font-medium cursor-pointer`}
                     >
                       Acces
                     </span>
                   </Link>
                   <Link href="/contact">
                     <span
-                      className={`${comforta.className} text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium cursor-pointer`}
+                      className={`${comforta.className} uppercase text-white hover:text-gray-600 px-3 py-2 rounded-md text-[12px] font-medium cursor-pointer`}
                     >
                       Séminaires
                     </span>
                   </Link>
                   <Link href="/seminaire">
                     <span
-                      className={`${comforta.className} text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium cursor-pointer`}
+                      className={`${comforta.className} uppercase text-white hover:text-gray-600 px-3 py-2 rounded-md text-[12px] font-medium cursor-pointer`}
                     >
                       Contact
                     </span>
                   </Link>
                   <Link href="/seminaire">
                     <span
-                      className={`${comforta.className} text-gray-800 border-[1px] border-orange-700 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium cursor-pointer`}
+                      className={`${comforta.className} uppercase text-pink-600 border-[1px] border-pink-600 hover:text-gray-600 px-3 py-2 rounded-md text-[12px] font-medium cursor-pointer`}
                     >
                       Réserver
                     </span>
@@ -107,7 +107,7 @@ const Navbar = () => {
             <div className="-mr-2 flex md:hidden">
               <button
                 onClick={toggleMenu}
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-800"
+                className="inline-flex items-center justify-center p-2 rounded-md text-white"
               >
                 <span className="sr-only">Open main menu</span>
                 <svg
@@ -134,21 +134,21 @@ const Navbar = () => {
             <div className="ml-14 px-2 pt-2 pb-3 space-y-1 sm:px-3 tracking-wide">
               <Link href="/">
                 <span
-                  className={`${comforta.className} text-gray-800 hover:text-gray-600 block px-3 py-2  cursor-pointer  text-[12px]`}
+                  className={`${comforta.className} uppercase text-white hover:text-gray-600 block px-3 py-2  cursor-pointer  text-[12px]`}
                 >
                   Accueil
                 </span>
               </Link>
               <Link href="/flat">
                 <span
-                  className={`${comforta.className} text-gray-800 hover:text-gray-600 block px-3 py-2  cursor-pointer  text-[12px]`}
+                  className={`${comforta.className} uppercase text-white hover:text-gray-600 block px-3 py-2  cursor-pointer  text-[12px]`}
                 >
                   L'appartement
                 </span>
               </Link>
               <Link href="/seminaire">
                 <span
-                  className={`${comforta.className} text-gray-800 hover:text-gray-600 block px-3 py-2  cursor-pointer  text-[12px]`}
+                  className={`${comforta.className} uppercase text-white hover:text-gray-600 block px-3 py-2  cursor-pointer  text-[12px]`}
                 >
                   Séminaires
                 </span>
@@ -156,28 +156,28 @@ const Navbar = () => {
 
               <Link href="/contact">
                 <span
-                  className={`${comforta.className} text-gray-800 hover:text-gray-600 block px-3 py-2  cursor-pointer  text-[12px]`}
+                  className={`${comforta.className} uppercase text-white hover:text-gray-600 block px-3 py-2  cursor-pointer  text-[12px]`}
                 >
                   Acces
                 </span>
               </Link>
               <Link href="/contact">
                 <span
-                  className={`${comforta.className} text-gray-800 hover:text-gray-600 block px-3 py-2  cursor-pointer  text-[12px]`}
+                  className={`${comforta.className} uppercase text-white hover:text-gray-600 block px-3 py-2  cursor-pointer  text-[12px]`}
                 >
                   Activitées
                 </span>
               </Link>
               <Link href="/contact">
                 <span
-                  className={`${comforta.className} text-gray-800 hover:text-gray-600 block px-3 py-2  cursor-pointer  text-[12px]`}
+                  className={`${comforta.className} uppercase text-white hover:text-gray-600 block px-3 py-2  cursor-pointer  text-[12px]`}
                 >
                   Contact
                 </span>
               </Link>
               <Link href="/contact">
                 <span
-                  className={`${comforta.className} text-center rounded-md w-[100px] border-[2px] border-yellow-700 text-gray-800 hover:text-gray-600 block px-2 py-1 cursor-pointer  text-[12px]`}
+                  className={`${comforta.className} uppercase text-center rounded-md w-[100px] border-[1px] border-pink-600  text-pink-600 hover:text-gray-600 block px-2 py-1 cursor-pointer  text-[12px]`}
                 >
                   Réserver
                 </span>
