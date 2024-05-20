@@ -18,22 +18,45 @@ export default function Home() {
         <Navbar />
         <section className="text-center">
           <h2 className={`${lobster.className} text-[40px] mb-4 text-white`}>
-            Bienvenue au Chalet Remy
+            Séminaires
           </h2>
-          <p
-            className={`${comforta.className} text-[15px] mb-8 font-poppin text-white`}
-          >
-            Saint Gervais les Bains - 26 personnes
-          </p>
+
           <ArrowDown />
         </section>
       </div>
 
       <div
         id="about"
-        className={`${lobster.className} h-screen flex justify-center items-center bg-white`}
+        className={`${comforta.className}h-screen flex flex-col justify-center text-justify  bg-white p-4`}
       >
-        <p className="text-[80px]">about</p>
+        <h2 className={`${lobster.className} text-[40px] mb-4 `}>
+          Sémninaires au Chalet Remy
+        </h2>
+        <p className="text-[15px] mb-8">
+          Le CHALET REMY peut également accueillir vos réunions professionnelles
+          et vos séminaires d’entreprise. Quoi de mieux que de réunir son équipe
+          en pleine nature dans un écrin élégant ? Le calme ambiant et le
+          panorama époustouflant sur le Massif du Mont-Blanc sont parfaits pour
+          apporter de la sérénité à vos collaborateurs. L’atmosphère des lieux
+          est idéale pour rendre vos moments de team building efficaces et
+          inoubliables. Le CHALET REMY offre également toutes les conditions
+          favorables aux membres de vos COMEX, CODIR, pour se retirer du tumulte
+          et prendre le recul nécessaire pour acter des décisions stratégiques
+          et pérennes. Notre conciergerie se charge des services annexes à
+          l’hébergement, tels que collation, repas, transports, excursions,
+          animations… N’hésitez-pas à nous interroger pour un devis sur-mesure !
+        </p>
+        <h4>CAPACITE DES LIEUX</h4>
+        <ul>
+          <li>Bureau : 8 personnes</li>
+          <li>Salles de projection : 8/10 personnes + 14/16 personnes</li>
+          <li>Salle de réunion au rez-de-chaussée : 20 personnes</li>
+          <li>Réunion en terrasse : 30 personnes</li>
+        </ul>
+
+        <a>video projecteur</a>
+        <a>Equipement mobile pour visio conférence</a>
+        <a>paperboard</a>
       </div>
 
       <Arrow />

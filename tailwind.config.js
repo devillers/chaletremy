@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'chalet-remy': "url('/images/chalet-remy3.jpg')",
+        'chalet-pmr': "url('/images/chalet-remy0.jpg')",
       },
     },
   },

@@ -1,4 +1,4 @@
-import { comforta, Cave } from '../font';
+import { comforta } from '../font';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -7,7 +7,7 @@ export default function Footer() {
     <section className="flex flex-col items-center bg-white mt-5">
       <div className="w-full  p-2 flex items-center justify-center">
         <Image
-          src="/chalet-remy-logo-big.png" // replace with your image path
+          src="/chalet-remy-logo-big.png"
           alt="Luxury Chalet"
           objectFit="cover"
           quality={100}
@@ -18,15 +18,6 @@ export default function Footer() {
       </div>
       <div className="w-full p-2 text-black text-[10px] uppercase ">
         <div className="flex flex-row  justify-center">
-          {/* <Link href="/" className={`${comforta.className}cursor-pointer px-2`}>
-            Home{' '}
-          </Link>
-          <Link href="/" className={`${comforta.className}cursor-pointer px-2`}>
-            Le Chalet{' '}
-          </Link>
-          <Link href="/" className={`${comforta.className}cursor-pointer px-2`}>
-            L'appartement{' '}
-          </Link> */}
           <Link href="/" className={`${comforta.className}cursor-pointer px-2`}>
             Mentions Légales{' '}
           </Link>

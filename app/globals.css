@@ -5,3 +5,18 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Add this CSS in your global styles file (e.g., styles/globals.css) */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.9;
+  }
+  40% {
+    opacity: 0.4;
+  }
+}
+
+.blink {
+  animation: blink 2s infinite;
+}
