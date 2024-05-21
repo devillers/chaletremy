@@ -1,7 +1,9 @@
+'use client';
+
 import { useEffect, useState } from 'react';
+import { comforta, lobster } from '../font';
 import Link from 'next/link';
 import Image from 'next/image';
-import { comforta, lobster } from '../font';
 
 const Navbar = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -36,7 +38,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full transition-opacity duration-500 ${
+      className={`fixed top-0 w-full transition-opacity duration-500 z-50 ${
         !isNavbarVisible && scrollPosition > 50 ? 'opacity-0' : 'opacity-100'
       }`}
     >
@@ -72,7 +74,7 @@ const Navbar = () => {
                       L'appartement
                     </span>
                   </Link>
-                  <Link href="/acces">
+                  <Link href="">
                     <span
                       className={`${comforta.className} uppercase text-white hover:text-gray-600 px-3 py-2 rounded-md text-[12px] font-medium cursor-pointer`}
                     >
@@ -144,7 +146,7 @@ const Navbar = () => {
               </span>
             </Link>
 
-            <Link href="/flat">
+            <Link href="/">
               <span
                 className={`${comforta.className} uppercase text-white w-[150px] text-center mb-1 bg-opacity-30 bg-slate-400 hover:text-gray-600 block px-3 py-2 cursor-pointer text-[12px] rounded-bl-xl shadow-md`}
               >
@@ -165,13 +167,13 @@ const Navbar = () => {
                 Acces
               </span>
             </Link>
-            <Link href="/contact">
+            {/* <Link href="">
               <span
                 className={`${comforta.className} uppercase text-white w-[100px] text-center mb-1 bg-opacity-30 bg-slate-400 hover:text-gray-600 block px-3 py-2 cursor-pointer text-[12px] rounded-bl-xl shadow-md`}
               >
                 Activitées
               </span>
-            </Link>
+            </Link> */}
             <Link href="/contact">
               <span
                 className={`${comforta.className} uppercase text-white w-[100px] text-center mb-1 bg-opacity-30 bg-slate-400 hover:text-gray-600 block px-3 py-2 cursor-pointer text-[12px] rounded-bl-xl shadow-md`}

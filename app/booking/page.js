@@ -1,20 +1,42 @@
 'use client';
-import { lobster } from '../font';
-
-import React from 'react';
+import { comforta, lobster } from '../font';
 import Navbar from '../components/Navbar';
+import Arrow from '../components/ArrowUp';
+import ArrowDown from '../components/ArrowDown';
 
-const page = () => {
+export default function Home() {
   return (
     <>
-      <Navbar />
-      <div className="mt-20 container mx-auto p-5">
-        <div className={`${lobster.className} text-4xl text-slate-900`}>
-          reserver
+      <section className="relative rounded-sm h-screen bg-chalet-booking bg-cover bg-center flex flex-col justify-center items-center">
+        <div className="absolute inset-0 bg-black opacity-20 bg-blend-difference"></div>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full w-full mx-auto">
+          <div className="text-center mt-20">
+            <h2 className={`${lobster.className} text-[40px] mb-4 text-white`}>
+              Réservations
+            </h2>
+            <p
+              className={`${comforta.className} text-[15px] mb-8 font-poppin text-white`}
+            >
+              Chalet & Appartement
+            </p>
+            <ArrowDown />
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* Content */}
+      <section className="relative z-10 flex flex-col items-center justify-center h-full w-full mx-auto">
+        <Navbar />
+      </section>
+
+      <section
+        id="about"
+        className={`${lobster.className} h-screen flex justify-center items-center`}
+      >
+        <p className="text-[80px]">reserver</p>
+      </section>
+
+      <Arrow />
     </>
   );
-};
-
-export default page;
+}
