@@ -8,8 +8,10 @@ import ArrowDown from '../components/ArrowDown';
 export default function Home() {
   return (
     <>
-      <section className="relative rounded-sm h-screen  bg-cover bg-center flex flex-col justify-center items-center">
-        <VideoPlayer src="/videos/9575733-uhd_1440_2560_30fps.mp4" />
+      <section className="relative rounded-sm h-screen bg-chalet-remy bg-cover bg-center flex flex-col justify-center items-center">
+        <div className="md:hidden">
+          <VideoPlayer src="/videos/9575733-hd_1080_1920_30fps.mp4" />
+        </div>
 
         <div className="absolute inset-0 bg-black opacity-20 bg-blend-difference"></div>
         <div className="relative flex flex-col items-center justify-center h-full w-full mx-auto">

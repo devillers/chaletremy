@@ -146,7 +146,7 @@ const Navbar = () => {
               </span>
             </Link>
 
-            <Link href="/">
+            <Link href="/flat">
               <span
                 className={`${comforta.className} uppercase text-white w-[150px] text-center mb-1 bg-opacity-30 bg-slate-400 hover:text-gray-600 block px-3 py-2 cursor-pointer text-[12px] rounded-bl-xl shadow-md`}
               >
