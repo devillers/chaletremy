@@ -1,7 +1,7 @@
 'use client';
 
 import { comforta, lobster } from '../font';
-import VideoPlayer from '../components/Video360';
+import VideoPlayer from '../components/VideoInsta';
 import Arrow from '../components/ArrowUp';
 import ArrowDown from '../components/ArrowDown';
 
