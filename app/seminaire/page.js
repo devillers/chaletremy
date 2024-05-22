@@ -28,7 +28,7 @@ export default function Home() {
 
       <section
         id="about"
-        className=" h-screen p-6 flex-col justify-center items-center leading-6 text-justify"
+        className=" p-6 flex-col justify-center items-center leading-6 text-justify"
       >
         <div>
           <p className={`${comforta.className} text-[12px] mb-4 `}>
