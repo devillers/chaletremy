@@ -6,6 +6,11 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* Add this CSS in your global styles file (e.g., styles/globals.css) */
 @keyframes blink {
   0%,
