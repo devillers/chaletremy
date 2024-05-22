@@ -28,6 +28,9 @@ const VideoBackground = ({ src }) => {
       className="absolute inset-0 w-full h-full object-cover"
       muted
       loop
+      autoPlay
+      playsInline
+      controls={false}
     />
   );
 };
