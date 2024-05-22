@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import Image from 'next/image'; // Make sure you import Image from next/image
 import { comforta, lobster } from '../font';
 import Arrow from '../components/ArrowUp';
 import ArrowDown from '../components/ArrowDown';
@@ -31,15 +32,26 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    if (isVideoLoaded && videoRef.current) {
+      videoRef.current.play().catch((error) => {
+        console.error('Video playback failed:', error);
+      });
+    }
+  }, [isVideoLoaded]);
+
   return (
     <>
       <section className="relative rounded-sm h-screen bg-cover bg-center flex flex-col justify-center items-center md:bg-chalet-app">
         {/* Placeholder image for mobile view */}
         {!isVideoLoaded && (
-          <img
-            src="/images/background-seminaire.png" // Replace with your placeholder image path
+          <Image
+            src="/images/background-seminaire.png" // Ensure this path is correct
             alt="Placeholder"
-            className="absolute inset-0 w-full h-full object-cover md:hidden"
+            fill
+            sizes="(max-width: 768px) 100vw, 100vw" // Define sizes for responsive design
+            style={{ objectFit: 'cover' }}
+            className="absolute inset-0 w-full h-full md:hidden"
           />
         )}
 
@@ -51,20 +63,24 @@ export default function Home() {
         >
           <video
             ref={videoRef}
-            src="/videos/8716790-hd_1280_720_25fps.mp4"
+            src="/videos/seminaire-video.mp4"
             className="w-full h-full object-cover"
             autoPlay
             muted
             loop
+            controls={false} // Hide video controls
           ></video>
         </div>
 
         {/* Static image for medium and larger screens */}
         <div className="hidden md:block absolute inset-0 w-full h-full">
-          <img
-            src="/images/background-seminaire.png" // Replace with your large image path
+          <Image
+            src="/images/background-seminaire.png" // Ensure this path is correct
             alt="Chalet"
-            className="w-full h-full object-cover"
+            fill
+            sizes="(min-width: 768px) 100vw, 100vw" // Define sizes for responsive design
+            style={{ objectFit: 'cover' }}
+            className="w-full h-full"
           />
         </div>
 
@@ -72,7 +88,7 @@ export default function Home() {
         <div className="relative flex flex-col items-center justify-center h-full w-full mx-auto">
           <div className="text-center mt-20">
             <h2 className={`${lobster.className} text-[40px] mb-4 text-white`}>
-              Séminaire
+              L'appartement
             </h2>
             <p
               className={`${comforta.className} text-[15px] mb-8 font-poppin text-white`}

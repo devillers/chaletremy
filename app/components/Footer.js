@@ -9,11 +9,11 @@ export default function Footer() {
         <Image
           src="/chalet-remy-logo-big.png"
           alt="Luxury Chalet"
-          objectFit="cover"
           quality={100}
           height={100}
           width={100}
           className="object-cover"
+          style={{ objectFit: 'cover' }}
         />
       </div>
       <div className="w-full p-2 text-black text-[10px] uppercase ">
