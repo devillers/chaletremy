@@ -35,7 +35,7 @@ export default function Home() {
         className={`${comforta.className} text-[12px]  leading-6 tracking-wide p-2`}
       >
         <h2 className={`${Cabine.className} text-[24px]`}>prestige & cosy</h2>
-        <p className="mt-6 mb-4 text-justify p-6  rounded-md shadow-md bg-white">
+        <p className="mt-6 mb-4 text-justify p-6  rounded-md shadow-sm bg-white">
           Alliant tradition et modernité, LE CHALET a une vue imprenable sur le
           Mont-Blanc et le Mont Joly, avec un ensoleillement exceptionnel. Situé
           sur un terrain plat, il est très facile d’accès, à proximité du centre
@@ -46,7 +46,7 @@ export default function Home() {
           9 chambres & suites
         </h3>
         <section className="mt-6 mb-4">
-          <div className="flex items-center justify-center p-4 shadow-md rounded-md ">
+          <div className="flex items-center justify-center p-4 shadow-sm rounded-md ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="30px"
@@ -61,7 +61,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className=" p-4 shadow-md rounded-md ">
+          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
             <div className="flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ export default function Home() {
             <p className="text-center">vue Mont-Blanc</p>
           </div>
 
-          <div className=" p-4 shadow-md rounded-md ">
+          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
             <div className="flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +102,7 @@ export default function Home() {
               espace enfants
             </h3>
 
-            <div className=" p-4 shadow-md rounded-md ">
+            <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
               <div className="flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +118,7 @@ export default function Home() {
               <p className="text-center">SDB & WC</p>
             </div>
 
-            <div className=" p-4 shadow-md rounded-md ">
+            <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
               <div className="flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +139,7 @@ export default function Home() {
         <section className="mt-6 mb-4">
           <h4 className={`${Cabine.className} text-[24px]`}>espaces de vie</h4>
 
-          <div className=" p-4 shadow-md rounded-md ">
+          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
             <div className="flex items-center justify-center ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +154,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" p-4 shadow-md rounded-md ">
+          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
             <div className="flex items-center justify-center ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -169,7 +169,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" p-4 shadow-md rounded-md ">
+          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
             <div className="flex items-center justify-center ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -188,7 +188,7 @@ export default function Home() {
         <section className="mt-6 mb-4">
           <h4 className={`${Cabine.className} text-[24px]`}>exterieur</h4>
 
-          <div className=" p-4 shadow-md rounded-md ">
+          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
             <div className="flex items-center justify-center ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -205,7 +205,7 @@ export default function Home() {
         </section>
 
         <section className="mt-6">
-          <div className=" p-4 shadow-md rounded-md ">
+          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
             <div className="flex items-center justify-center ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -220,7 +220,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" p-4 shadow-md rounded-md ">
+          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
             <div className="flex items-center justify-center ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -235,7 +235,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" p-4 shadow-md rounded-md ">
+          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
             <div className="flex items-center justify-center ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -250,7 +250,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" p-4 shadow-md rounded-md ">
+          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
             <div className="flex items-center justify-center ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -265,7 +265,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" p-4 shadow-md rounded-md ">
+          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
             <div className="flex items-center justify-center ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -280,7 +280,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" p-4 shadow-md rounded-md ">
+          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
             <div className="flex items-center justify-center ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -295,7 +295,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" p-4 shadow-md rounded-md ">
+          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
             <div className="flex items-center justify-center ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -310,7 +310,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" p-4 shadow-md rounded-md ">
+          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
             <div className="flex items-center justify-center ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -325,7 +325,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" p-4 shadow-md rounded-md ">
+          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
             <div className="flex items-center justify-center ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -340,7 +340,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" p-4 shadow-md rounded-md ">
+          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
             <div className="flex items-center justify-center ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -355,7 +355,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" p-4 shadow-md rounded-md ">
+          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
             <div className="flex items-center justify-center ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
