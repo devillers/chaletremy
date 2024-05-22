@@ -4,6 +4,7 @@ import {
   Lobster,
   Comfortaa,
   Caveat,
+  Cabin,
 } from 'next/font/google';
 
 export const inter = Inter({
@@ -25,6 +26,11 @@ export const comforta = Comfortaa({
 });
 
 export const Cave = Caveat({
+  subsets: ['latin'],
+  weight: '400',
+});
+
+export const Cabine = Cabin({
   subsets: ['latin'],
   weight: '400',
 });
