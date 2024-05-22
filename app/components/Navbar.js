@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { comforta, lobster } from '../font';
+import { comforta } from '../font';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -108,9 +108,8 @@ const Navbar = () => {
             <div className="-mr-2 flex md:hidden">
               <button
                 onClick={toggleMenu}
-                className="inline-flex items-center justify-center p-2 rounded-md text-black"
+                className="inline-flex items-center justify-center p-2 rounded-md text-white"
               >
-                <span className="sr-only">Open main menu</span>
                 <svg
                   className="block h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
