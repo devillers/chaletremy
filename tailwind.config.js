@@ -8,9 +8,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'chalet-app': "url('/images/background.png')",
+        'chalet-app': "url('/images/background-flat.png')",
         'chalet-pmr': "url('/images/chalet-remy0.jpg')",
         'chalet-booking': "url('/images/reserver.jpg')",
+        'chalet-seminaire': "url('/images/background-seminaire.png')",
       },
     },
   },

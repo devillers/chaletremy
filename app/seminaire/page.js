@@ -1,4 +1,3 @@
-// pages/index.js
 'use client';
 
 import { comforta, lobster } from '../font';
@@ -9,9 +8,14 @@ import ArrowDown from '../components/ArrowDown';
 export default function Home() {
   return (
     <>
-      <section className="relative rounded-sm h-screen bg-cover bg-center flex flex-col justify-center items-center">
-        <VideoPlayer src="/videos/flat-video.mp4" />
-        <div className="absolute inset-0 bg-black opacity-60 bg-blend-overlay"></div>
+      <section className="relative rounded-sm h-screen bg-cover bg-center flex flex-col justify-center items-center md:bg-chalet-app">
+        {/* Video only visible on mobile */}
+        <div className="block md:hidden absolute inset-0 w-full h-full">
+          <VideoPlayer src="/videos/flat-video.mp4" />
+        </div>
+
+        {/* Overlay for darkening the background */}
+        <div className="absolute inset-0 bg-black opacity-20 bg-blend-difference"></div>
         <div className="relative flex flex-col items-center justify-center h-full w-full mx-auto">
           <div className="text-center mt-20">
             <h2 className={`${lobster.className} text-[40px] mb-4 text-white`}>
