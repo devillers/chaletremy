@@ -70,18 +70,18 @@ export default function Home() {
               className={`${Cabine.className}  mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
             >
               <IoBedOutline className="h-[16px] w-[16px] mr-2 text-pink-700 " />
-              8 chambres
+              1 chambre + 1 canapé convertible
             </a>
             <a
               className={`${Cabine.className}  mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
             >
-              <GiBunkBeds className="h-[20px] w-[20px] mr-2 text-pink-700 " />2
+              <GiBunkBeds className="h-[20px] w-[20px] mr-2 text-pink-700 " />1
               dortoirs
             </a>
             <a
               className={`${Cabine.className}  mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
             >
-              <TbBath className="h-[20px] w-[20px] mr-2 text-pink-700 " />9 sdb
+              <TbBath className="h-[20px] w-[20px] mr-2 text-pink-700 " />1 sdb
             </a>
           </div>
           <p
