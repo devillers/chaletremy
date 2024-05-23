@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <section className="h-screen w-full flex justify-center items-center">
+    <section className="h-screen w-full flex justify-center items-center bg-[#d1d1d11c]">
       <div className="flex justify-center items-center">
         <Link href="/chalet">
           <Image
@@ -14,7 +14,7 @@ export default function Home() {
             quality={100}
             height={200}
             width={200}
-            className="object-cover shadow-md rounded-lg border-b-[1px]"
+            className="object-cover shadow-md bg-white rounded-lg border-b-[1px]"
             style={{ objectFit: 'cover' }}
           />
         </Link>
@@ -22,37 +22,3 @@ export default function Home() {
     </section>
   );
 }
-
-// 'use client';
-// import Head from 'next/head';
-// import FullscreenComponent from './components/FullScreen';
-
-// export default function Home() {
-//   return (
-//     <div>
-//       <Head>
-//         <title>Fullscreen Home Page</title>
-//         <meta name="viewport" content="width=device-width, initial-scale=1" />
-//       </Head>
-//       <FullscreenComponent />
-//       <style jsx global>{`
-//         body,
-//         html {
-//           margin: 0;
-//           padding: 0;
-//           width: 100%;
-//           height: 100%;
-//           overflow: hidden;
-//         }
-//         .fullscreen-container {
-//           display: flex;
-//           justify-content: center;
-//           align-items: center;
-//           width: 100vw;
-//           height: 100vh;
-//           background-color: black;
-//         }
-//       `}</style>
-//     </div>
-//   );
-// }

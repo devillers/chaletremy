@@ -7,14 +7,14 @@ import Footer from './components/Footer';
 const Layout = ({ children }) => {
   const pathname = usePathname();
   const showNav = pathname !== '/';
+  const showFooter = pathname !== '/';
 
   return (
     <html lang="en">
       <body>
         {showNav && <Navbar />}
         <main>{children}</main>
-
-        <Footer />
+        {showFooter && <Footer />}
       </body>
     </html>
   );

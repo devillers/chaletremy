@@ -11,11 +11,13 @@
   "dependencies": {
     "@egjs/view360": "^3.6.4",
     "@react-google-maps/api": "^2.19.3",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "axios": "^1.6.8",
     "next": "14.2.3",
     "nodemailer": "^6.9.13",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-icons": "^5.2.1"
   },
   "devDependencies": {
     "postcss": "^8",

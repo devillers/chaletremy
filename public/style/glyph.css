@@ -1,0 +1,11 @@
+/* styles/glyphEffect.module.css */
+.glyphEffect {
+  filter: url('#glyph-filter');
+}
+
+.svgFilters {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}

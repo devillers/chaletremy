@@ -1,10 +1,15 @@
 'use client';
 
 import { comforta, Cabine } from '../font';
-import VideoPlayer from '../components/VideoBackground';
+//import VideoPlayer from '../components/VideoBackground';
 import Arrow from '../components/ArrowUp';
 import ArrowDown from '../components/ArrowDown';
 import PhotoGallery from '../components/PhotoGallery';
+import { TbMeterSquare } from 'react-icons/tb';
+import { IoPeople } from 'react-icons/io5';
+import { IoBedOutline } from 'react-icons/io5';
+import { GiBunkBeds } from 'react-icons/gi';
+import { TbBath } from 'react-icons/tb';
 
 export default function Home() {
   return (
@@ -49,34 +54,38 @@ export default function Home() {
           </h4>
           <div className="flex flex-col md:flex-row justify-items-start mt-4">
             <a
-              className={`${Cabine.className}  mt-1 ml-4 tracking-wide uppercase text-[12px]`}
+              className={`${Cabine.className}  mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
             >
-              6 personnes + 2
+              <IoPeople className="h-[16px] w-[16px] mr-2 text-pink-700 " />6
+              personnes + 2
             </a>
             <a
-              className={`${Cabine.className}  mt-1 ml-4 tracking-wide uppercase text-[12px]`}
+              className={`${Cabine.className}  mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
             >
+              <TbMeterSquare className="h-[20px] w-[20px] mr-2 text-pink-700 " />
               70 m2
             </a>
 
             <a
-              className={`${Cabine.className}  mt-1 ml-4 tracking-wide uppercase text-[12px]`}
+              className={`${Cabine.className}  mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
             >
+              <IoBedOutline className="h-[16px] w-[16px] mr-2 text-pink-700 " />
               8 chambres
             </a>
             <a
-              className={`${Cabine.className}  mt-1 ml-4 tracking-wide uppercase text-[12px]`}
+              className={`${Cabine.className}  mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
             >
-              2 dortoirs
+              <GiBunkBeds className="h-[20px] w-[20px] mr-2 text-pink-700 " />2
+              dortoirs
             </a>
             <a
-              className={`${Cabine.className}  mt-1 ml-4 tracking-wide uppercase text-[12px]`}
+              className={`${Cabine.className}  mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
             >
-              9 sdb
+              <TbBath className="h-[20px] w-[20px] mr-2 text-pink-700 " />9 sdb
             </a>
           </div>
           <p
-            className={`${Cabine.className}  mt-7 p-4  tracking-wide  text-[12px] text-justify`}
+            className={`${Cabine.className}  mt-7  tracking-wide p-2 md:p-0 text-[13px] leading-8 text-justify`}
           >
             Bienvenue dans cet appartement au sein d'un chalet historique de
             Saint-Gervais. Idéalement situé entre Chamonix et Megève, au pied
