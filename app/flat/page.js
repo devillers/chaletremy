@@ -47,7 +47,7 @@ export default function Home() {
           <h4 className="uppercase mt-1 ml-4 tracking-wide text-[12px]">
             Saint Gervais les bains - Le bettex
           </h4>
-          <div className="flex justify-items-start mt-4">
+          <div className="flex flex-col md:flex-row justify-items-start mt-4">
             <a
               className={`${Cabine.className}  mt-1 ml-4 tracking-wide uppercase text-[12px]`}
             >
