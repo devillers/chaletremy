@@ -1,6 +1,7 @@
 'use client';
 import './globals.css';
 import { usePathname } from 'next/navigation';
+import Navbar from './components/Navbar';
 import { comforta, Cabine } from './font';
 
 const Layout = ({ children }) => {
@@ -10,7 +11,7 @@ const Layout = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        {showNav && <nav>{/* Navigation content here */}</nav>}
+        {showNav && <Navbar />}
         <main>{children}</main>
       </body>
     </html>
