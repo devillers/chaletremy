@@ -64,7 +64,7 @@ const Navbar = () => {
                     <span
                       className={`${comforta.className} uppercase text-white hover:text-gray-600 px-3 py-2 rounded-md text-[12px] font-medium cursor-pointer`}
                     >
-                      Accueil
+                      Le Chalet
                     </span>
                   </Link>
                   <Link href="/flat">

@@ -48,7 +48,7 @@ export default function Home() {
         className={`${Cabine.className} bg-[#fefdfd] text-slate-600 p-2 flex-col justify-center items-center leading-6 text-justify `}
       >
         <div className="  mt-10 mb-10  max-w-[800px] mx-auto ">
-          <h3 className=" text-[25px] ">Appartement Remy</h3>
+          <h3 className=" text-[25px] ">L'appartement</h3>
           <h4 className="uppercase mt-1 ml-4 tracking-wide text-[12px]">
             Saint Gervais les bains - Le bettex
           </h4>
