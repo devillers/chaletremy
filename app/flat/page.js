@@ -17,9 +17,9 @@ export default function Home() {
       <section className="relative rounded-sm h-screen bg-cover bg-center flex flex-col justify-center items-center bg-chalet-app">
         <div className="absolute inset-0 bg-gradient-radial from-slate-900 via-transparent to-slate-800 opacity-90 "></div>
         <div
-          className={`${Cabine.className} absolute bottom-2 rounded-sm shadow-sm left-2 text-white text-[16px] p-4 bg-slate-500`}
+          className={`${Cabine.className} absolute bottom-4 rounded-md shadow-sm left-4 text-white text-[16px] p-4 bg-pink-600`}
         >
-          see photos
+          voir les photos
         </div>
 
         <div className="relative flex flex-col items-center justify-center h-full w-full mx-auto">
@@ -49,31 +49,31 @@ export default function Home() {
             <a
               className={`${Cabine.className} mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
             >
-              <IoPeople className="h-[16px] w-[16px] mr-2 text-pink-700 " />6
+              <IoPeople className="h-[16px] w-[16px] mr-2 text-pink-600 " />6
               personnes + 2
             </a>
             <a
               className={`${Cabine.className} mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
             >
-              <TbMeterSquare className="h-[20px] w-[20px] mr-2 text-pink-700 " />
+              <TbMeterSquare className="h-[20px] w-[20px] mr-2 text-pink-600 " />
               70 m2
             </a>
             <a
               className={`${Cabine.className} mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
             >
-              <IoBedOutline className="h-[16px] w-[16px] mr-2 text-pink-700 " />
+              <IoBedOutline className="h-[16px] w-[16px] mr-2 text-pink-600 " />
               1 chambre + 1 canapé convertible
             </a>
             <a
               className={`${Cabine.className} mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
             >
-              <GiBunkBeds className="h-[20px] w-[20px] mr-2 text-pink-700 " />1
-              dortoirs
+              <GiBunkBeds className="h-[16px] w-[16px] mr-2 text-pink-600 " />1
+              dortoir
             </a>
             <a
               className={`${Cabine.className} mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
             >
-              <TbBath className="h-[20px] w-[20px] mr-2 text-pink-700 " />1 sdb
+              <TbBath className="h-[16px] w-[16px] mr-2 text-pink-600 " />1 sdb
             </a>
           </div>
           <div className="">
@@ -89,7 +89,7 @@ export default function Home() {
               pour un repos bien mérité après une longue journée au grand air.
               Un cadre parfait pour des vacances inoubliables !
             </p>
-            <Accordion title="Le Logement">
+            <Accordion title="infos supplémentaires">
               <p
                 className={`${Cabine.className} tracking-wide p-2 text-[13px] leading-8 text-justify`}
               >
