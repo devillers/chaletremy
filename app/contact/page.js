@@ -1,7 +1,7 @@
 'use client';
-import { comforta, lobster } from '../font';
+import { comforta, lobster, Cabine } from '../font';
 import { useState } from 'react';
-import Navbar from '../components/Navbar';
+
 import ArrowDown from '../components/ArrowDown';
 
 export default function ContactPage() {
@@ -34,14 +34,19 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="rounded-sm h-screen bg-chalet-remy bg-cover bg-center flex flex-col justify-center items-center ">
-        <div className="relative z-10 flex flex-col items-center justify-center h-full w-full mx-auto">
-          <Navbar />
-          <div className="text-center mt-16">
-            <h2 className={`${lobster.className} text-[40px] mb-4 text-white`}>
-              Contactez nous
-            </h2>
+      <section className="relative rounded-sm h-screen bg-cover bg-center flex flex-col justify-center items-center bg-chalet-app">
+        {/* Video only visible on mobile */}
 
+        {/* Overlay for darkening the background */}
+        <div className="absolute inset-0 bg-black opacity-40 bg-blend-difference"></div>
+        <div className="relative flex flex-col items-center justify-center h-full w-full mx-auto">
+          <div className="text-center mt-20">
+            <h2 className={`${Cabine.className} text-[40px] mb-4 text-white`}>
+              contactez nous
+            </h2>
+            <p
+              className={`${comforta.className} text-[15px] mb-8 font-poppin text-white`}
+            ></p>
             <ArrowDown />
           </div>
         </div>
@@ -50,7 +55,7 @@ export default function ContactPage() {
         <div className="flex-grow flex flex-col items-center justify-center tracking-wide">
           <div className="w-full lg:w-full max-w-4xl space-y-8 p-4">
             <div className="mt-5  text-slate-600">
-              <h1 className={`${lobster.className} text-3xl mb-1`}>
+              <h1 className={`${Cabine.className} text-3xl mb-1`}>
                 Chalet Remy
               </h1>
               <hr />

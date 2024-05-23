@@ -10,7 +10,7 @@ module.exports = {
       backgroundImage: {
         'chalet-app': "url('/images/background-flat.png')",
         'chalet-pmr': "url('/images/chalet-remy0.jpg')",
-        'chalet-booking': "url('/images/chalet-remy2.jpg')",
+        'chalet-booking': "url('/images/cuisine.jpeg')",
         'chalet-seminaire': "url('/images/background-seminaire.png')",
       },
     },
