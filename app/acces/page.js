@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <section className="relative rounded-sm h-screen bg-chalet-booking bg-cover bg-center flex flex-col justify-center items-center">
-        <div className="absolute inset-0 bg-black opacity-5g0 bg-blend-difference"></div>
+        <div className="absolute inset-0 bg-black opacity-50 bg-blend-difference"></div>
         <div className="relative flex flex-col items-center justify-center h-full w-full mx-auto">
           <div className="text-center mt-20">
             <h2 className={`${Cabine.className}  text-[40px] mb-4 text-white`}>

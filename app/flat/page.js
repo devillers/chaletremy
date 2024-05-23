@@ -32,11 +32,13 @@ export default function Home() {
         <div className="relative flex flex-col items-center justify-center h-full w-full mx-auto">
           <div className="text-center mt-20">
             <h2 className={`${Cabine.className} text-[40px] mb-4 text-white`}>
-              appartement
+              L'appartement
             </h2>
             <p
               className={`${comforta.className} text-[15px] mb-8 font-poppin text-white`}
-            ></p>
+            >
+              Saint Gervais les Bains - 6 + 2 personnes
+            </p>
             <ArrowDown />
           </div>
         </div>
