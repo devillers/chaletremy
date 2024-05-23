@@ -36,6 +36,10 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav
       className={`fixed top-0 w-full transition-opacity duration-500 z-50 ${
@@ -140,6 +144,7 @@ const Navbar = () => {
             <Link href="chalet">
               <span
                 className={`${comforta.className} uppercase text-white w-[100px] text-center mb-1 bg-opacity-30 bg-slate-400 hover:text-gray-600 block px-3 py-2 cursor-pointer text-[12px] rounded-bl-xl shadow-md transition hover:duration-200  hover:ease-in-out  hover:-rotate-3`}
+                onClick={closeMenu}
               >
                 Le Chalet
               </span>
@@ -148,6 +153,7 @@ const Navbar = () => {
             <Link href="/flat">
               <span
                 className={`${comforta.className} uppercase text-white w-[150px] text-center mb-1 bg-opacity-30 bg-slate-400 hover:text-gray-600 block px-3 py-2 cursor-pointer text-[12px] rounded-bl-xl shadow-md`}
+                onClick={closeMenu}
               >
                 L'appartement
               </span>
@@ -155,6 +161,7 @@ const Navbar = () => {
             <Link href="/seminaire">
               <span
                 className={`${comforta.className} uppercase text-white w-[120px] text-center mb-1 bg-opacity-30 bg-slate-400 hover:text-gray-600 block px-3 py-2 cursor-pointer text-[12px] rounded-bl-xl shadow-md`}
+                onClick={closeMenu}
               >
                 Séminaires
               </span>
@@ -162,6 +169,7 @@ const Navbar = () => {
             <Link href="/acces">
               <span
                 className={`${comforta.className} uppercase text-white w-[100px] text-center mb-1 bg-opacity-30 bg-slate-400 hover:text-gray-600 block px-3 py-2 cursor-pointer text-[12px] rounded-bl-xl shadow-md`}
+                onClick={closeMenu}
               >
                 Acces
               </span>
@@ -176,6 +184,7 @@ const Navbar = () => {
             <Link href="/contact">
               <span
                 className={`${comforta.className} uppercase text-white w-[100px] text-center mb-1 bg-opacity-30 bg-slate-400 hover:text-gray-600 block px-3 py-2 cursor-pointer text-[12px] rounded-bl-xl shadow-md`}
+                onClick={closeMenu}
               >
                 Contact
               </span>
@@ -183,6 +192,7 @@ const Navbar = () => {
             <Link href="/booking">
               <span
                 className={`${comforta.className} uppercase text-white w-[100px] text-center mt-4 bg-opacity-30 bg-pink-400 hover:text-pink-600 block px-3 py-2 cursor-pointer text-[12px] rounded-bl-xl shadow-md`}
+                onClick={closeMenu}
               >
                 Réserver
               </span>
