@@ -1,49 +1,53 @@
-// components/FullscreenComponent.js
-import { useEffect } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+'use client';
+
+import { useState } from 'react';
 
 const FullscreenComponent = () => {
-  useEffect(() => {
-    const handleFullscreen = () => {
-      if (!document.fullscreenElement) {
-        document.documentElement.requestFullscreen().catch((err) => {
-          console.error(
-            `Error attempting to enable full-screen mode: ${err.message} (${err.name})`
-          );
-        });
-      }
-    };
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
-    handleFullscreen();
-
-    return () => {
-      if (document.fullscreenElement) {
-        document.exitFullscreen().catch((err) => {
-          console.error(
-            `Error attempting to exit full-screen mode: ${err.message} (${err.name})`
-          );
-        });
+  const handleFullscreen = () => {
+    const element = document.documentElement;
+    if (!isFullscreen) {
+      if (element.requestFullscreen) {
+        element.requestFullscreen();
+      } else if (element.mozRequestFullScreen) {
+        // Firefox
+        element.mozRequestFullScreen();
+      } else if (element.webkitRequestFullscreen) {
+        // Chrome, Safari, and Opera
+        element.webkitRequestFullscreen();
+      } else if (element.msRequestFullscreen) {
+        // IE/Edge
+        element.msRequestFullscreen();
       }
-    };
-  }, []);
+      setIsFullscreen(true);
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.mozCancelFullScreen) {
+        // Firefox
+        document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) {
+        // Chrome, Safari, and Opera
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {
+        // IE/Edge
+        document.msExitFullscreen();
+      }
+      setIsFullscreen(false);
+    }
+  };
 
   return (
-    <section className="h-screen w-full flex justify-center items-center">
-      <div className="flex justify-center items-center">
-        <Link href="/chalet">
-          <Image
-            src="/chalet-remy-logo-removebg-preview.png"
-            alt="Luxury Chalet"
-            quality={100}
-            height={200}
-            width={200}
-            className="object-cover shadow-md rounded-lg border-b-[1px]"
-            style={{ objectFit: 'cover' }}
-          />
-        </Link>
-      </div>
-    </section>
+    <div className="fullscreen-container">
+      <button onClick={handleFullscreen} className="fullscreen-button">
+        button
+        {isFullscreen ? 'Exit Fullscreen' : 'Enter Fullscreen'}
+      </button>
+      <h1 className="text-center text-white">
+        Welcome to the Fullscreen Home Page
+      </h1>
+    </div>
   );
 };
 
