@@ -1,20 +1,20 @@
+'use client';
 import './globals.css';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import { usePathname } from 'next/navigation';
+import { comforta, Cabine } from './font';
 
-export const metadata = {
-  title: 'Chalet Remy',
-  description: 'chalet 26 personnes, 600 m2',
-};
+const Layout = ({ children }) => {
+  const pathname = usePathname();
+  const showNav = pathname !== '/';
 
-export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="*">
-        <Navbar />
-        {children}
-        <Footer />
+      <body>
+        {showNav && <nav>{/* Navigation content here */}</nav>}
+        <main>{children}</main>
       </body>
     </html>
   );
-}
+};
+
+export default Layout;
