@@ -1,5 +1,6 @@
 'use client';
-import { comforta, Cabine } from './font';
+
+
 import Image from 'next/image';
 import Link from 'next/link';
 

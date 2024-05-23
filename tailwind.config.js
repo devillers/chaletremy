@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'chalet-app': "url('/images/background-flat.png')",
+        'chalet-app': "url('/images/background-flat.jpeg')",
         'chalet-pmr': "url('/images/chalet-remy0.jpg')",
         'chalet-booking': "url('/images/cuisine.jpeg')",
         'chalet-seminaire': "url('/images/background-seminaire.png')",

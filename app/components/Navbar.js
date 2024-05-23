@@ -97,7 +97,7 @@ const Navbar = () => {
                   </Link>
                   <Link href="/booking">
                     <span
-                      className={`${comforta.className} uppercase text-white border-[1px] border-pink-600 hover:text-gray-600 px-3 py-2 rounded-md text-[12px] font-medium cursor-pointer`}
+                      className={`${comforta.className} uppercase text-white  bg-pink-600 hover:text-gray-600 px-3 py-2 rounded-md text-[12px] font-medium cursor-pointer`}
                     >
                       Réserver
                     </span>

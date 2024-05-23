@@ -32,5 +32,4 @@ export const Cave = Caveat({
 
 export const Cabine = Cabin({
   subsets: ['latin'],
-  weight: '400',
 });
