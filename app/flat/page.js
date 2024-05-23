@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <section className="relative rounded-sm h-screen bg-cover bg-center flex flex-col justify-center items-center bg-chalet-app">
-        <div className="absolute inset-0 bg-gradient-radial from-slate-900 via-transparent to-slate-800 opacity-90 "></div>
+        <div className="absolute inset-0 bg-black opacity-40 "></div>
         <div
           className={`${Cabine.className} absolute bottom-4 rounded-md shadow-sm left-4 text-white text-[16px] p-4 bg-pink-600`}
         >
@@ -41,7 +41,7 @@ export default function Home() {
         className={`${Cabine.className} bg-[#fefdfd] text-slate-600 p-2 flex-col justify-center items-center leading-6 text-justify `}
       >
         <div className="mt-10 mb-10 max-w-[800px] mx-auto ">
-          <h3 className="text-[25px]">L'appartement</h3>
+          <h3 className="text-[25px] ml-4 mb-2">L'appartement</h3>
           <h4 className="uppercase mt-1 ml-4 tracking-wide text-[12px]">
             Saint Gervais les bains - Le bettex
           </h4>

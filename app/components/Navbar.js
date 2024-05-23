@@ -174,19 +174,20 @@ const Navbar = () => {
                 Acces
               </span>
             </Link>
-            {/* <Link href="">
-              <span
-                className={`${comforta.className} uppercase text-white w-[100px] text-center mb-1 bg-opacity-30 bg-slate-400 hover:text-gray-600 block px-3 py-2 cursor-pointer text-[12px] rounded-bl-xl shadow-md`}
-              >
-                Activitées
-              </span>
-            </Link> */}
+
             <Link href="/contact">
               <span
                 className={`${comforta.className} uppercase text-white w-[100px] text-center mb-1 bg-opacity-30 bg-slate-400 hover:text-gray-600 block px-3 py-2 cursor-pointer text-[12px] rounded-bl-xl shadow-md`}
                 onClick={closeMenu}
               >
                 Contact
+              </span>
+            </Link>
+            <Link href="/sortir">
+              <span
+                className={`${comforta.className} uppercase text-white w-[100px] text-center mb-1 bg-opacity-30 bg-slate-400 hover:text-gray-600 block px-3 py-2 cursor-pointer text-[12px] rounded-bl-xl shadow-md`}
+              >
+                Sortir
               </span>
             </Link>
             <Link href="/booking">
