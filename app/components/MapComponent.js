@@ -25,13 +25,6 @@ const MapComponent = ({ address }) => {
         const map = L.map('map', {
           center: [coordinates.lat, coordinates.lon],
           zoom: zoom,
-          minZoom: 5,
-          maxZoom: 18,
-          zoomControl: true,
-          attributionControl: true,
-          scrollWheelZoom: true,
-          doubleClickZoom: true,
-          dragging: true,
         });
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
