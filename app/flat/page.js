@@ -23,11 +23,7 @@ export default function Home() {
     <>
       <section className="relative rounded-sm h-screen bg-cover bg-center flex flex-col justify-center items-center bg-chalet-app">
         <div className="absolute inset-0 bg-black opacity-40 "></div>
-        <div
-          className={`${Cabine.className} absolute bottom-4 rounded-md shadow-sm left-4 text-white text-[16px] p-4 bg-pink-600`}
-        >
-          voir les photos
-        </div>
+      
 
         <div className="relative flex flex-col items-center justify-center h-full w-full mx-auto">
           <div className="text-center mt-20">
@@ -41,6 +37,16 @@ export default function Home() {
             </p>
             <ArrowDown />
           </div>
+        </div>
+        <h3 className="uppercase absolute -bottom-[5px] -left-[2px] text-5xl text-white text-opacity-40">
+          {' '}
+          L'appartement'
+        </h3>
+        <div
+          className={`${Cabine.className} absolute bottom-16 left-6 border-pink-600 border-2 rounded-md shadow-sm  text-white text-[16px] p-4`}
+          href="#about"
+        >
+          voir les photos
         </div>
       </section>
 

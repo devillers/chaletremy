@@ -64,6 +64,10 @@ export default function Booking() {
             <ArrowDown />
           </div>
         </div>
+        <h3 className="uppercase absolute -bottom-[5px] -left-[2px] text-5xl text-white text-opacity-40">
+          {' '}
+          booking
+        </h3>
       </section>
 
       {/* Content */}
@@ -77,8 +81,8 @@ export default function Booking() {
               target="_blank"
               className="flex-1"
             >
-              <div className="flex items-center p-4 shadow-md rounded-md h-full transform transition-transform duration-300 hover:scale-105">
-                <div className="w-1/2 flex items-center justify-center">
+              <div className="flex items-center p-4 shadow-md rounded-md border-b h-full transform transition-transform duration-300 hover:scale-105">
+                <div className="w-1/2 flex items-center justify-center transform transition-transform duration-300 hover:scale-105">
                   <Image
                     src={item.image}
                     alt={item.text}

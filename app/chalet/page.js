@@ -85,15 +85,25 @@ export default function Home() {
         <div className="relative z-10 flex flex-col items-center justify-center h-full w-full mx-auto">
           <div className="text-center mt-20">
             <h2 className={`${Cabine.className} text-[40px] mb-4 text-white`}>
-              Le Chalet
+              Le Chalet Remy
             </h2>
             <p
-              className={`${comforta.className} text-[15px] mb-8 font-poppin text-white`}
+              className={`${comforta.className} text-[15px] mb-8 font-poppin text-white `}
             >
               525 M2 DE HAUT STANDING
             </p>
             <ArrowDown />
           </div>
+        </div>
+        <h3 className="uppercase absolute -bottom-[5px] -left-[2px] text-5xl text-white text-opacity-40">
+          {' '}
+          Le Chalet
+        </h3>
+        <div
+          className={`${Cabine.className} absolute bottom-16 left-6 border-pink-600 border-2 rounded-md shadow-sm  text-white text-[16px] p-4`}
+          href="#about"
+        >
+          voir les photos
         </div>
       </section>
 
