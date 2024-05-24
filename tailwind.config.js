@@ -12,6 +12,8 @@ module.exports = {
         'chalet-pmr': "url('/images/chalet-remy0.jpg')",
         'chalet-booking': "url('/images/cuisine.jpeg')",
         'chalet-seminaire': "url('/images/background-seminaire.png')",
+        'chalet-abstract-0': "url('/images/abstract.webp')",
+        'chalet-abstract-1': "url('/images/abstract1.webp')",
       },
     },
   },

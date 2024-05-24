@@ -1,6 +1,6 @@
 'use client';
 import { comforta, lobster, Cabine } from '../font';
-
+import Accordion from '../components/Accordion';
 import Arrow from '../components/ArrowUp';
 import ArrowDown from '../components/ArrowDown';
 
@@ -90,7 +90,7 @@ export default function Home() {
             <p
               className={`${comforta.className} text-[15px] mb-8 font-poppin text-white`}
             >
-              Saint Gervais les Bains - 26 personnes
+              525 M2 DE HAUT STANDING
             </p>
             <ArrowDown />
           </div>
@@ -98,6 +98,40 @@ export default function Home() {
       </section>
 
       {/* Content */}
+      <section
+        className={`${Cabine.className} text-[14px] text-justify max-w-[700px] mx-auto text-slate-800`}
+      >
+        <p className="p-4 leading-8 tracking-wide">
+          LE CHALET propose une multitude de commodités pour ses hôtes : un spa
+          extérieur avec vue imprenable sur le Mont-Blanc, un sauna, une salle
+          de cinéma, une salle de jeux vidéo, une bibliothèque ouverte sur une
+          terrasse abritée, refuge paisible pour se détendre au son mélodieux du
+          chant des oiseaux et des animaux des bois environnants.
+        </p>
+
+        <Accordion title="voir">
+          <p
+            className={`${Cabine.className} tracking-wide p-2 text-[13px] leading-8 text-justify`}
+          >
+            Pour les plus connectés, un grand bureau vitré permet de travailler
+            dans le calme et la sérénité. Le chalet a été conçu pour accueillir
+            les personnes à mobilité réduite, offrant une suite dédiée ainsi
+            qu’un ascenseur pour profiter des équipements des niveaux inférieur
+            et supérieur.
+          </p>
+          <p className="p-4 leading-8 tracking-wide">
+            Accessibilité, authenticité, confort, tranquillité, détente, nature…
+            sont les maîtres-mots de votre séjour au CHALET RÉMY.
+          </p>
+          <p className="p-4 leading-8 tracking-wide">
+            LE CHALET et L’APPARTEMENT sont loués indépendamment.
+          </p>
+          <p className="p-4 leading-8 tracking-wide">
+            Vous pouvez également louer les deux simultanément. Une porte
+            communicante permet d’accéder facilement aux deux espaces.
+          </p>
+        </Accordion>
+      </section>
       <section
         id="about"
         className={`${Cabine.className}  flex justify-center items-center`}
@@ -117,354 +151,4 @@ export default function Home() {
       <Arrow />
     </>
   );
-}
-
-{
-  /* 
-      <section
-        id="about"
-        className={`${comforta.className} text-[12px]  leading-6 tracking-wide p-2`}
-      >
-        <h2 className={`${Cabine.className} text-[24px]`}>prestige & cosy</h2>
-        <p className="mt-6 mb-4 text-justify p-6  rounded-md shadow-sm bg-white">
-          Alliant tradition et modernité, LE CHALET a une vue imprenable sur le
-          Mont-Blanc et le Mont Joly, avec un ensoleillement exceptionnel. Situé
-          sur un terrain plat, il est très facile d’accès, à proximité du centre
-          bourg , au pied des pistes et des navettes. Surface de 525 m2 sur 4
-          niveaux
-        </p>
-        <h3 className={`${Cabine.className} text-[24px]`}>
-          9 chambres & suites
-        </h3>
-        <section className="mt-6 mb-4">
-          <div className="flex items-center justify-center p-4 shadow-sm rounded-md ">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="30px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#be185d"
-            >
-              <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-            </svg>
-            <p className="m-3">
-              1 Suite avec accès PMR, double salle de bain privative, .
-            </p>
-          </div>
-
-          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-            <div className="flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#be185d"
-              >
-                <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-              </svg>
-              <p className="m-3">
-                4 chambres double ou twin – salle de douche & wc
-              </p>
-            </div>
-            <p className="text-center">vue Mont-Blanc</p>
-          </div>
-
-          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-            <div className="flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#be185d"
-              >
-                <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-              </svg>
-              <p className="m-3">
-                2 suites junior avec espace salon et espace nuit
-              </p>
-            </div>
-            <p className="text-center">terrasse privative</p>
-          </div>
-
-          <section>
-            <h3 className={`${Cabine.className} text-[24px] `}>
-              espace enfants
-            </h3>
-
-            <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-              <div className="flex items-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="30px"
-                  viewBox="0 -960 960 960"
-                  width="24px"
-                  fill="#be185d"
-                >
-                  <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-                </svg>
-                <p className="m-3">1 dortoir de 4 couchages</p>
-              </div>
-              <p className="text-center">SDB & WC</p>
-            </div>
-
-            <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-              <div className="flex items-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="30px"
-                  viewBox="0 -960 960 960"
-                  width="24px"
-                  fill="#be185d"
-                >
-                  <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-                </svg>
-                <p className="m-3">1 dortoir de 6 couchages</p>
-              </div>
-              <p className="text-center">SDB & WC</p>
-            </div>
-          </section>
-        </section>
-
-        <section className="mt-6 mb-4">
-          <h4 className={`${Cabine.className} text-[24px]`}>espaces de vie</h4>
-
-          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-            <div className="flex items-center justify-center ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#be185d"
-              >
-                <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-              </svg>
-              <p className="m-3">Salle cinéma</p>
-            </div>
-          </div>
-
-          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-            <div className="flex items-center justify-center ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#be185d"
-              >
-                <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-              </svg>
-              <p className="m-3">salle Jeux videos</p>
-            </div>
-          </div>
-
-          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-            <div className="flex items-center justify-center ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#be185d"
-              >
-                <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-              </svg>
-              <p className="m-3">sauna</p>
-            </div>
-          </div>
-        </section>
-
-        <section className="mt-6 mb-4">
-          <h4 className={`${Cabine.className} text-[24px]`}>exterieur</h4>
-
-          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-            <div className="flex items-center justify-center ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#be185d"
-              >
-                <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-              </svg>
-              <p className="m-3">jacuzzi </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="mt-6">
-          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-            <div className="flex items-center justify-center ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#be185d"
-              >
-                <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-              </svg>
-              <p className="m-3">sauna</p>
-            </div>
-          </div>
-
-          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-            <div className="flex items-center justify-center ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#be185d"
-              >
-                <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-              </svg>
-              <p className="m-3">cheminée</p>
-            </div>
-          </div>
-
-          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-            <div className="flex items-center justify-center ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#be185d"
-              >
-                <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-              </svg>
-              <p className="m-3">ski room</p>
-            </div>
-          </div>
-
-          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-            <div className="flex items-center justify-center ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#be185d"
-              >
-                <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-              </svg>
-              <p className="m-3">chauffe chaussures</p>
-            </div>
-          </div>
-
-          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-            <div className="flex items-center justify-center ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#be185d"
-              >
-                <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-              </svg>
-              <p className="m-3">salle de cinéma</p>
-            </div>
-          </div>
-
-          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-            <div className="flex items-center justify-center ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#be185d"
-              >
-                <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-              </svg>
-              <p className="m-3">accés pmr</p>
-            </div>
-          </div>
-
-          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-            <div className="flex items-center justify-center ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#be185d"
-              >
-                <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-              </svg>
-              <p className="m-3">ascenceur</p>
-            </div>
-          </div>
-
-          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-            <div className="flex items-center justify-center ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#be185d"
-              >
-                <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-              </svg>
-              <p className="m-3">terrasse</p>
-            </div>
-          </div>
-
-          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-            <div className="flex items-center justify-center ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#be185d"
-              >
-                <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-              </svg>
-              <p className="m-3">wifi</p>
-            </div>
-          </div>
-
-          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-            <div className="flex items-center justify-center ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#be185d"
-              >
-                <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-              </svg>
-              <p className="m-3">2 bornes de chargement</p>
-            </div>
-          </div>
-
-          <div className=" p-4 shadow-sm border-b-[1px] rounded-md ">
-            <div className="flex items-center justify-center ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#be185d"
-              >
-                <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-              </svg>
-              <p className="m-3">8 coffres-fort</p>
-            </div>
-          </div>
-        </section>
-      </section>
-
-      <Arrow />
-    </>
-  );
-} */
 }
