@@ -27,6 +27,10 @@ export default function Home() {
             <ArrowDown />
           </div>
         </div>
+        <h3 className="uppercase absolute -bottom-[5px] -left-[2px] text-5xl text-white text-opacity-40">
+          {' '}
+          séminaires
+        </h3>
       </section>
 
       {/* Content */}

@@ -26,7 +26,7 @@ const Gallery = () => {
 
   return (
     <div>
-      <div className="max-w-4xl grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 mx-auto">
+      <div className="max-w-4xl grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 mx-auto z-10">
         {images.map((image, index) => (
           <div
             key={index}

@@ -1,8 +1,22 @@
 'use client';
-import { comforta, lobster, Cabine } from '../font';
-import Accordion from '../components/Accordion';
+
+import { comforta, Cabine } from '../font';
 import Arrow from '../components/ArrowUp';
 import ArrowDown from '../components/ArrowDown';
+import PhotoGallery from '../components/PhotoGallery';
+import { TbMeterSquare } from 'react-icons/tb';
+import { IoPeople } from 'react-icons/io5';
+import { IoBedOutline } from 'react-icons/io5';
+import { GiBunkBeds } from 'react-icons/gi';
+import { TbBath } from 'react-icons/tb';
+import Accordion from '../components/Accordion'; // Importer le composant Accordion
+import dynamic from 'next/dynamic';
+import 'leaflet/dist/leaflet.css';
+
+// Dynamically import the MapComponent for client-side rendering
+const DynamicMap = dynamic(() => import('../components/MapComponent'), {
+  ssr: false, // This ensures Leaflet is only rendered on the client side
+});
 
 const items = [
   {
@@ -100,7 +114,7 @@ export default function Home() {
           Le Chalet
         </h3>
         <div
-          className={`${Cabine.className} absolute bottom-16 left-6 border-pink-600 border-2 rounded-md shadow-sm  text-white text-[16px] p-4`}
+          className={`${Cabine.className} uppercase absolute bottom-16 left-6 border-pink-600 border-[1px] bg-pink-900 bg-opacity-20 rounded-md shadow-sm tracking-wide text-white text-[14px] p-4`}
           href="#about"
         >
           voir les photos
@@ -108,7 +122,7 @@ export default function Home() {
       </section>
 
       {/* Content */}
-      <section
+      {/* <section
         className={`${Cabine.className} text-[14px] text-justify max-w-[700px] mx-auto text-slate-800`}
       >
         <p className="p-4 leading-8 tracking-wide">
@@ -141,6 +155,83 @@ export default function Home() {
             communicante permet d’accéder facilement aux deux espaces.
           </p>
         </Accordion>
+      </section> */}
+
+      <section
+        className={`${Cabine.className} bg-[#fefdfd] text-slate-600 p-2 flex-col justify-center items-center leading-6 text-justify `}
+      >
+        <div className="mt-10 mb-10 max-w-[800px] mx-auto ">
+          <h3 className="text-[25px] ml-4 mb-2">Le Chalet</h3>
+          <h4 className="uppercase mt-1 ml-4 tracking-wide text-[12px]">
+            Saint Gervais les bains - Le bettex
+          </h4>
+          <div className="flex flex-col md:flex-row justify-items-start mt-4">
+            <a
+              className={`${Cabine.className} mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
+            >
+              <IoPeople className="h-[16px] w-[16px] mr-2 text-pink-600 " />
+              26 personnes
+            </a>
+            <a
+              className={`${Cabine.className} mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
+            >
+              <TbMeterSquare className="h-[20px] w-[20px] mr-2 text-pink-600 " />
+              530 m2
+            </a>
+            <a
+              className={`${Cabine.className} mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
+            >
+              <IoBedOutline className="h-[16px] w-[16px] mr-2 text-pink-600 " />
+              8 chambres doubles
+            </a>
+            <a
+              className={`${Cabine.className} mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
+            >
+              <GiBunkBeds className="h-[16px] w-[16px] mr-2 text-pink-600 " />1
+              2 dortoirs
+            </a>
+            <a
+              className={`${Cabine.className} mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
+            >
+              <TbBath className="h-[16px] w-[16px] mr-2 text-pink-600 " />9 sdb
+            </a>
+          </div>
+          <div className="">
+            <p className="p-4 leading-8 tracking-wide">
+              LE CHALET propose une multitude de commodités pour ses hôtes : un
+              spa extérieur avec vue imprenable sur le Mont-Blanc, un sauna, une
+              salle de cinéma, une salle de jeux vidéo, une bibliothèque ouverte
+              sur une terrasse abritée, refuge paisible pour se détendre au son
+              mélodieux du chant des oiseaux et des animaux des bois
+              environnants.
+            </p>
+            <Accordion title="voir">
+              <p
+                className={`${Cabine.className} tracking-wide p-2 text-[13px] leading-8 text-justify`}
+              >
+                Pour les plus connectés, un grand bureau vitré permet de
+                travailler dans le calme et la sérénité. Le chalet a été conçu
+                pour accueillir les personnes à mobilité réduite, offrant une
+                suite dédiée ainsi qu’un ascenseur pour profiter des équipements
+                des niveaux inférieur et supérieur.
+              </p>
+              <p className="p-4 leading-8 tracking-wide">
+                Accessibilité, authenticité, confort, tranquillité, détente,
+                nature… sont les maîtres-mots de votre séjour au CHALET RÉMY.
+              </p>
+              <p className="p-4 leading-8 tracking-wide">
+                LE CHALET et L’APPARTEMENT sont loués indépendamment.
+              </p>
+              <p className="p-4 leading-8 tracking-wide">
+                Vous pouvez également louer les deux simultanément. Une porte
+                communicante permet d’accéder facilement aux deux espaces.
+              </p>
+            </Accordion>
+          </div>
+        </div>
+        <div id="about">
+          <PhotoGallery />
+        </div>
       </section>
       <section
         id="about"
@@ -156,6 +247,18 @@ export default function Home() {
             </div>
           ))}
         </div>
+      </section>
+      {/* Content */}
+      <section
+        id="about"
+        className=" h-[600px] px-2 flex flex-col md:flex-row justify-center leading-6 text-justify overflow-hidden md:p-0 max-w-[900px] mx-auto"
+      >
+        <div className="w-full md:w-1/2 h-1/2 md:max-h-[300px] flex">
+          <div className="w-full ">
+            <DynamicMap address="520 route des communailles, 74170, Saint Gervais les bains " />
+          </div>
+        </div>
+        <div className="w-full md:w-1/2 h-1/2 md:max-h-[300px] bg-slate-100 "></div>
       </section>
 
       <Arrow />

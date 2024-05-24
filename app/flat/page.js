@@ -18,6 +18,79 @@ const DynamicMap = dynamic(() => import('../components/MapComponent'), {
   ssr: false, // This ensures Leaflet is only rendered on the client side
 });
 
+const items = [
+  {
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="30px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        fill="#be185d"
+      >
+        <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
+      </svg>
+    ),
+    text: 'salle Jeux videos',
+  },
+  {
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="30px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        fill="#be185d"
+      >
+        <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
+      </svg>
+    ),
+    text: 'salle de cinema',
+  },
+  {
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="30px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        fill="#be185d"
+      >
+        <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
+      </svg>
+    ),
+    text: 'cheminée',
+  },
+  {
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="30px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        fill="#be185d"
+      >
+        <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
+      </svg>
+    ),
+    text: 'jacuzzi',
+  },
+  {
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="30px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        fill="#be185d"
+      >
+        <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
+      </svg>
+    ),
+    text: 'sauna',
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -26,23 +99,25 @@ export default function Home() {
 
         <div className="relative flex flex-col items-center justify-center h-full w-full mx-auto">
           <div className="text-center mt-20">
-            <h2 className={`${Cabine.className} text-[40px] mb-4 text-white`}>
+            <h2
+              className={`${Cabine.className} text-[40px] mb-4 text-white select-none`}
+            >
               L'appartement
             </h2>
             <p
-              className={`${comforta.className} text-[15px] mb-8 font-poppin text-white`}
+              className={`${comforta.className} text-[15px] mb-8 font-poppin text-white select-none `}
             >
-              Saint Gervais les Bains - 6 + 2 personnes
+              6 + 2 personnes
             </p>
             <ArrowDown />
           </div>
         </div>
         <h3 className="uppercase absolute -bottom-[5px] -left-[2px] text-5xl text-white text-opacity-40">
           {' '}
-          L'appartement'
+          L'appartement
         </h3>
         <div
-          className={`${Cabine.className} absolute bottom-16 left-6 border-pink-600 border-2 rounded-md shadow-sm  text-white text-[16px] p-4`}
+          className={`${Cabine.className} uppercase absolute bottom-16 left-6 border-pink-600 border-[1px] bg-pink-900 bg-opacity-20 rounded-md shadow-sm tracking-wide text-white text-[14px] p-4`}
           href="#about"
         >
           voir les photos
@@ -152,14 +227,29 @@ export default function Home() {
       {/* Content */}
       <section
         id="about"
-        className=" h-[600px] px-2 flex flex-col md:flex-row justify-center items-center leading-6 text-justify overflow-hidden md:p-0 max-w-[900px] mx-auto"
+        className={`${Cabine.className}  flex justify-center items-center`}
       >
-        <div className="w-full md:w-1/2 h-1/2 md:h-full flex">
-          <div className="w-full h-full">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
+          {items.map((item, index) => (
+            <div key={index} className="p-4 shadow-md rounded-md">
+              <div className="flex items-center justify-center">
+                {item.svg}
+                <p className="m-3">{item.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section
+        id="about"
+        className=" h-[600px] px-2 flex flex-col md:flex-row justify-center leading-6 text-justify overflow-hidden md:p-0 max-w-[900px] mx-auto"
+      >
+        <div className="w-full md:w-1/2 h-1/2 md:max-h-[300px] flex">
+          <div className="w-full ">
             <DynamicMap address="520 route des communailles, 74170, Saint Gervais les bains " />
           </div>
         </div>
-        <div className="w-full md:w-1/2 h-1/2 md:h-full bg-slate-50 "></div>
+        <div className="w-full md:w-1/2 h-1/2 md:max-h-[300px] bg-slate-100 "></div>
       </section>
 
       <Arrow />
