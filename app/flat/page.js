@@ -23,7 +23,6 @@ export default function Home() {
     <>
       <section className="relative rounded-sm h-screen bg-cover bg-center flex flex-col justify-center items-center bg-chalet-app">
         <div className="absolute inset-0 bg-black opacity-40 "></div>
-      
 
         <div className="relative flex flex-col items-center justify-center h-full w-full mx-auto">
           <div className="text-center mt-20">
@@ -153,14 +152,14 @@ export default function Home() {
       {/* Content */}
       <section
         id="about"
-        className=" h-screen p-2 flex flex-col md:flex-row justify-center items-center leading-6 text-justify overflow-hidden"
+        className=" h-[600px] px-2 flex flex-col md:flex-row justify-center items-center leading-6 text-justify overflow-hidden md:p-0 max-w-[900px] mx-auto"
       >
         <div className="w-full md:w-1/2 h-1/2 md:h-full flex">
           <div className="w-full h-full">
             <DynamicMap address="520 route des communailles, 74170, Saint Gervais les bains " />
           </div>
         </div>
-        <div className="w-full md:w-1/2 h-1/2 md:h-full bg-red-400">empty</div>
+        <div className="w-full md:w-1/2 h-1/2 md:h-full bg-slate-50 "></div>
       </section>
 
       <Arrow />
