@@ -1,5 +1,6 @@
 'use client';
 import './globals.css';
+import '/public/style/leaflet.css';
 import { usePathname } from 'next/navigation';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';

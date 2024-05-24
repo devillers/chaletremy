@@ -1,28 +1,27 @@
-// utils/getCoordinates.js
-const getCoordinates = async (address) => {
-  const params = {
-    address,
-    key: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
-  };
-  const url = `https://maps.googleapis.com/maps/api/geocode/json?${new URLSearchParams(
-    params
-  ).toString()}`;
-  console.log('Request URL:', url);
+import axios from 'axios';
 
+export const getCoordinates = async (address) => {
   try {
-    const response = await axios.get(url);
-    const { results } = response.data;
-    if (results.length > 0) {
-      const { lat, lng } = results[0].geometry.location;
-      return { lat, lng };
+    const response = await axios.get(
+      'https://nominatim.openstreetmap.org/search',
+      {
+        params: {
+          q: address,
+          format: 'json',
+          addressdetails: 1,
+          limit: 1,
+        },
+      }
+    );
+
+    if (response.data && response.data.length > 0) {
+      const { lat, lon } = response.data[0];
+      return { lat: parseFloat(lat), lon: parseFloat(lon) };
     } else {
-      throw new Error('No results found for the given address');
+      throw new Error('Address not found');
     }
   } catch (error) {
-    console.error(
-      'Error fetching coordinates:',
-      error.response ? error.response.data : error.message
-    );
-    throw error;
+    console.error('Error fetching coordinates:', error);
+    return null;
   }
 };

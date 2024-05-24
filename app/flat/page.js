@@ -10,6 +10,13 @@ import { IoBedOutline } from 'react-icons/io5';
 import { GiBunkBeds } from 'react-icons/gi';
 import { TbBath } from 'react-icons/tb';
 import Accordion from '../components/Accordion'; // Importer le composant Accordion
+import dynamic from 'next/dynamic';
+import 'leaflet/dist/leaflet.css';
+
+// Dynamically import the MapComponent for client-side rendering
+const DynamicMap = dynamic(() => import('../components/MapComponent'), {
+  ssr: false, // This ensures Leaflet is only rendered on the client side
+});
 
 export default function Home() {
   return (
@@ -136,6 +143,18 @@ export default function Home() {
         <div id="about">
           <PhotoGallery />
         </div>
+      </section>
+      {/* Content */}
+      <section
+        id="about"
+        className=" h-screen p-2 flex flex-col md:flex-row justify-center items-center leading-6 text-justify overflow-hidden"
+      >
+        <div className="w-full md:w-1/2 h-1/2 md:h-full flex">
+          <div className="w-full h-full">
+            <DynamicMap address="520 route des communailles, 74170, Saint Gervais les bains " />
+          </div>
+        </div>
+        <div className="w-full md:w-1/2 h-1/2 md:h-full bg-red-400">empty</div>
       </section>
 
       <Arrow />
