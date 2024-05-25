@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Cabine } from '../font';
 
-const Accordion = ({ title, children }) => {
+const Accordion = ({ title, description, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
@@ -9,14 +9,19 @@ const Accordion = ({ title, children }) => {
   };
 
   return (
-    <div className="bg-white border-b-slate-300 border-b-[1px] mb-2 shadow-sm roudne-sm">
+    <div className="border-b border-gray-200">
       <button
-        className={`${Cabine.className}w-full text-left p-4 focus:outline-none flex items-center `}
+        className={`${Cabine.className}w-full text-left p-4 focus:outline-none flex items-center`}
         onClick={toggleAccordion}
       >
-        <h3 className={`${Cabine.className} text-[14px] tracking-wide ml-2`}>
+        <h3 className={`${Cabine.className} text-[12px] tracking-wide ml-2`}>
           {title}
         </h3>
+        <p
+          className={`${Cabine.className} text-[10px] text-pink-900 uppercase tracking-wide ml-2`}
+        >
+          {description}
+        </p>
         <span
           className={`${Cabine.className} text-[30px] ml-4 font-thin text-pink-600`}
         >

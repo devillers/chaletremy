@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <section className="relative rounded-sm h-screen md:h-[400px] bg-chalet-pmr bg-cover bg-center flex flex-col justify-center items-center">
-        <div className="absolute inset-0 bg-black opacity-40 "></div>
+        <div className="absolute inset-0 bg-black bg-opacity-40 "></div>
         <div className="relative flex flex-col items-center justify-center h-full w-full mx-auto">
           <div className="text-center mt-20">
             <h2 className={`${Cabine.className}  text-[40px] mb-4 text-white`}>
@@ -30,6 +30,10 @@ export default function Home() {
             <ArrowDown />
           </div>
         </div>
+        <h3 className="uppercase absolute -bottom-[5px] -left-[2px] text-5xl text-white text-opacity-40">
+          {' '}
+          se rendre au chalet
+        </h3>
       </section>
 
       {/* Content */}
@@ -59,11 +63,11 @@ export default function Home() {
                 style={{ cursor: 'pointer' }}
               />
             </div>
-            <div className="flex-1">
-              <h3 className={`${comforta.className} text-[14px] mt-1`}>
-                titre
+            <div className="mt-6 flex-1 w-[90%] mx-auto leading-7 text-slate-600">
+              <h3 className={`${Cabine.className} text-[16px] mt-1 uppercase`}>
+                Se rendre au Chalet Rémy
               </h3>
-              <p className={`${comforta.className} text-[12px] mt-1`}>
+              <p className={`${Cabine.className} text-[12px] mt-2 `}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                 vel metus eget neque aliquam congue. Nam vitae pretium enim. Ut
                 sed odio non tortor condimentum efficitur. Etiam dui quam,

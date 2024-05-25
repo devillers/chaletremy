@@ -12,7 +12,11 @@ import { TbBath } from 'react-icons/tb';
 import Accordion from '../components/Accordion'; // Importer le composant Accordion
 import dynamic from 'next/dynamic';
 import 'leaflet/dist/leaflet.css';
-import imagesData from '../json/chalet.json';
+import sousSolPic from '../json/chalet-ss.json';
+import rdcPic from '../json/chalet-rdc.json';
+import etPic1 from '../json/chalet-1.json';
+import etPic2 from '../json/chalet-2.json';
+import extPic from '../json/chalet-ext.json';
 
 // Dynamically import the MapComponent for client-side rendering
 const DynamicMap = dynamic(() => import('../components/MapComponent'), {
@@ -96,7 +100,7 @@ export default function Home() {
   return (
     <>
       <section className="relative rounded-sm h-screen md:h-[400px] bg-chalet-pmr bg-cover bg-center flex flex-col justify-center items-center">
-        <div className="absolute inset-0 bg-black opacity-40 "></div>
+        <div className="absolute inset-0 bg-black bg-opacity-40 "></div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full w-full mx-auto">
           <div className="text-center mt-20">
             <h2 className={`${Cabine.className} text-[40px] mb-4 text-white`}>
@@ -172,7 +176,7 @@ export default function Home() {
               mélodieux du chant des oiseaux et des animaux des bois
               environnants.
             </p>
-            <Accordion title="infos">
+            <Accordion title="INFOS">
               <p
                 className={`${Cabine.className} tracking-wide p-2 leading-8 text-justify`}
               >
@@ -200,21 +204,29 @@ export default function Home() {
                 communicante permet d’accéder facilement aux deux espaces.
               </p>
             </Accordion>
-            <Accordion title=" SOUS SOL - Cinéma - Sauna ">
-              <h3>SOUS SOL </h3>
-              <PhotoGallery images={imagesData} />
+
+            <Accordion title=" SOUS SOL" description="cinéma - sauna ">
+              {/* <h3>SOUS SOL </h3> */}
+              <PhotoGallery images={sousSolPic} />
             </Accordion>
-            <Accordion title="RDC - Cuisine - Salon - Suite PMR">
-              <h3>RDC </h3>
-              <PhotoGallery images={imagesData} />
+            <Accordion title="RDC" description="cuisine - salon - suite PMR">
+              {/* <h3>RDC </h3> */}
+              <PhotoGallery images={rdcPic} />
             </Accordion>
-            <Accordion title="1 étage - Salon - Suites">
-              <h3> 1 ETAGE </h3>
-              <PhotoGallery images={imagesData} />
+            <Accordion title="1er ETAGE" description="salon - suites">
+              {/* <h3> 1 ETAGE </h3> */}
+              <PhotoGallery images={etPic1} />
             </Accordion>
-            <Accordion title="2 étage - Dortoirs">
-              <h3> 2 ETAGE </h3>
-              <PhotoGallery images={imagesData} />
+            <Accordion title="2nd ETAGE" description="dortoirs">
+              {/* <h3> 2 ETAGE </h3> */}
+              <PhotoGallery images={etPic2} />
+            </Accordion>
+            <Accordion
+              title="EXTERIEUR"
+              description="terrasse - jacuzzi - chargeurs "
+            >
+              {/* <h3> EXTERIEUR </h3> */}
+              <PhotoGallery images={extPic} />
             </Accordion>
           </div>
         </div>

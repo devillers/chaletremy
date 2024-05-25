@@ -15,7 +15,7 @@ export default function Home() {
         </div>
 
         {/* Overlay for darkening the background */}
-        <div className="absolute inset-0 bg-black opacity-40 "></div>
+        <div className="absolute inset-0 bg-black bg-opacity-40 "></div>
         <div className="relative flex flex-col items-center justify-center h-full w-full mx-auto">
           <div className="text-center mt-20">
             <h2 className={`${Cabine.className} text-[40px] mb-4 text-white`}>
