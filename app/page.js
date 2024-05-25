@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <section className="h-screen w-full flex justify-center items-center bg-[#d1d1d11c]">
       <div className="flex flex-col justify-center items-center">
-        <div>
+        {/* <div>
           <p className={`${Cabine} text-justify text-[12px] max-w-[500px]`}>
             Il était une fois, dans le pittoresque village de Saint-Gervais,
             niché au coeur des montagnes entre Chamonix et Megève, le CHALET
@@ -25,7 +25,7 @@ export default function Home() {
             disposition de groupes et d’entreprises pour leurs réunions et
             séminaires.
           </p>
-        </div>
+        </div> */}
         <Link href="/chalet">
           <Image
             src="/chalet-remy-logo-removebg-preview.png"
