@@ -1,16 +1,6 @@
 import { useState } from 'react';
 
-const images = [
-  { src: '/flat/flat-0.jpg', alt: 'Rectangle Image 1' },
-  { src: '/flat/flat-1.jpg', alt: 'Rectangle Image 1' },
-  { src: '/flat/flat-2.jpg', alt: 'Rectangle Image 1' },
-  { src: '/flat/flat-3.jpg', alt: 'Rectangle Image 1' },
-  { src: '/flat/flat-4.jpg', alt: 'Rectangle Image 1' },
-  { src: '/flat/flat-5.jpg', alt: 'Rectangle Image 1' },
-  { src: '/flat/flat-6.jpg', alt: 'Rectangle Image 1' },
-];
-
-const Gallery = () => {
+const Gallery = ({ images }) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 

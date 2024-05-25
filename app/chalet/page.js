@@ -12,6 +12,7 @@ import { TbBath } from 'react-icons/tb';
 import Accordion from '../components/Accordion'; // Importer le composant Accordion
 import dynamic from 'next/dynamic';
 import 'leaflet/dist/leaflet.css';
+import imagesData from '../json/chalet.json';
 
 // Dynamically import the MapComponent for client-side rendering
 const DynamicMap = dynamic(() => import('../components/MapComponent'), {
@@ -160,7 +161,7 @@ export default function Home() {
               <TbBath className="h-[16px] w-[16px] mr-2 text-pink-600 " />9 sdb
             </a>
           </div>
-          <div className="text-[12px] mt-4">
+          <div className="text-[12px] md:text-[13px] mt-4">
             <p
               className={`${Cabine.className} tracking-wide p-4 leading-8 text-justify`}
             >
@@ -171,7 +172,7 @@ export default function Home() {
               mélodieux du chant des oiseaux et des animaux des bois
               environnants.
             </p>
-            <Accordion title="voir">
+            <Accordion title="infos">
               <p
                 className={`${Cabine.className} tracking-wide p-2 leading-8 text-justify`}
               >
@@ -199,11 +200,25 @@ export default function Home() {
                 communicante permet d’accéder facilement aux deux espaces.
               </p>
             </Accordion>
+            <Accordion title=" SOUS SOL - Cinéma - Sauna ">
+              <h3>SOUS SOL </h3>
+              <PhotoGallery images={imagesData} />
+            </Accordion>
+            <Accordion title="RDC - Cuisine - Salon - Suite PMR">
+              <h3>RDC </h3>
+              <PhotoGallery images={imagesData} />
+            </Accordion>
+            <Accordion title="1 étage - Salon - Suites">
+              <h3> 1 ETAGE </h3>
+              <PhotoGallery images={imagesData} />
+            </Accordion>
+            <Accordion title="2 étage - Dortoirs">
+              <h3> 2 ETAGE </h3>
+              <PhotoGallery images={imagesData} />
+            </Accordion>
           </div>
         </div>
-        <div id="about">
-          <PhotoGallery />
-        </div>
+        <div id="about">{/* a faire  */}</div>
       </section>
       <section
         id="about"

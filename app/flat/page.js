@@ -12,6 +12,7 @@ import { TbBath } from 'react-icons/tb';
 import Accordion from '../components/Accordion'; // Importer le composant Accordion
 import dynamic from 'next/dynamic';
 import 'leaflet/dist/leaflet.css';
+import imagesData from '../json/flat.json';
 
 // Dynamically import the MapComponent for client-side rendering
 const DynamicMap = dynamic(() => import('../components/MapComponent'), {
@@ -163,9 +164,9 @@ export default function Home() {
               <TbBath className="h-[16px] w-[16px] mr-2 text-pink-600 " />1 sdb
             </a>
           </div>
-          <div className="">
+          <div className="text-[12px] md:text-[13px] mt-4">
             <p
-              className={`${Cabine.className}  mt-7 tracking-wide p-4 text-[13px] leading-8 text-justify`}
+              className={`${Cabine.className}  mt-7 tracking-wide p-4 leading-8 text-justify`}
             >
               Bienvenue dans cet appartement au sein d'un chalet historique de
               Saint-Gervais. Idéalement situé entre Chamonix et Megève, au pied
@@ -178,7 +179,7 @@ export default function Home() {
             </p>
             <Accordion title="infos supplémentaires">
               <p
-                className={`${Cabine.className} tracking-wide p-2 text-[13px] leading-8 text-justify`}
+                className={`${Cabine.className} tracking-wide p-2 leading-8 text-justify`}
               >
                 L'appartement se compose de 2 chambres équipées d'une literie
                 neuve et confortable : La chambre principale offre intimité et
@@ -218,11 +219,14 @@ export default function Home() {
                 les Alpes.
               </p>
             </Accordion>
+            <Accordion title="1 etage">
+              <p> test </p>
+
+              <PhotoGallery images={imagesData} />
+            </Accordion>
           </div>
         </div>
-        <div id="about">
-          <PhotoGallery />
-        </div>
+        <div id="about"></div>
       </section>
       {/* Content */}
       <section

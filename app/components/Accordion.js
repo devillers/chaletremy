@@ -9,9 +9,9 @@ const Accordion = ({ title, children }) => {
   };
 
   return (
-    <div className="">
+    <div className="bg-white border-b-slate-300 border-b-[1px] mb-2 shadow-sm roudne-sm">
       <button
-        className={`${Cabine.className}w-full text-left p-4 focus:outline-none flex items-center`}
+        className={`${Cabine.className}w-full text-left p-4 focus:outline-none flex items-center `}
         onClick={toggleAccordion}
       >
         <h3 className={`${Cabine.className} text-[14px] tracking-wide ml-2`}>
