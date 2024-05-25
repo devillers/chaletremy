@@ -121,42 +121,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Content */}
-      {/* <section
-        className={`${Cabine.className} text-[14px] text-justify max-w-[700px] mx-auto text-slate-800`}
-      >
-        <p className="p-4 leading-8 tracking-wide">
-          LE CHALET propose une multitude de commodités pour ses hôtes : un spa
-          extérieur avec vue imprenable sur le Mont-Blanc, un sauna, une salle
-          de cinéma, une salle de jeux vidéo, une bibliothèque ouverte sur une
-          terrasse abritée, refuge paisible pour se détendre au son mélodieux du
-          chant des oiseaux et des animaux des bois environnants.
-        </p>
-
-        <Accordion title="voir">
-          <p
-            className={`${Cabine.className} tracking-wide p-2 text-[13px] leading-8 text-justify`}
-          >
-            Pour les plus connectés, un grand bureau vitré permet de travailler
-            dans le calme et la sérénité. Le chalet a été conçu pour accueillir
-            les personnes à mobilité réduite, offrant une suite dédiée ainsi
-            qu’un ascenseur pour profiter des équipements des niveaux inférieur
-            et supérieur.
-          </p>
-          <p className="p-4 leading-8 tracking-wide">
-            Accessibilité, authenticité, confort, tranquillité, détente, nature…
-            sont les maîtres-mots de votre séjour au CHALET RÉMY.
-          </p>
-          <p className="p-4 leading-8 tracking-wide">
-            LE CHALET et L’APPARTEMENT sont loués indépendamment.
-          </p>
-          <p className="p-4 leading-8 tracking-wide">
-            Vous pouvez également louer les deux simultanément. Une porte
-            communicante permet d’accéder facilement aux deux espaces.
-          </p>
-        </Accordion>
-      </section> */}
-
       <section
         className={`${Cabine.className} bg-[#fefdfd] text-slate-600 p-2 flex-col justify-center items-center leading-6 text-justify `}
       >
@@ -196,8 +160,10 @@ export default function Home() {
               <TbBath className="h-[16px] w-[16px] mr-2 text-pink-600 " />9 sdb
             </a>
           </div>
-          <div className="">
-            <p className="p-4 leading-8 tracking-wide">
+          <div className="text-[12px] mt-4">
+            <p
+              className={`${Cabine.className} tracking-wide p-4 leading-8 text-justify`}
+            >
               LE CHALET propose une multitude de commodités pour ses hôtes : un
               spa extérieur avec vue imprenable sur le Mont-Blanc, un sauna, une
               salle de cinéma, une salle de jeux vidéo, une bibliothèque ouverte
@@ -207,7 +173,7 @@ export default function Home() {
             </p>
             <Accordion title="voir">
               <p
-                className={`${Cabine.className} tracking-wide p-2 text-[13px] leading-8 text-justify`}
+                className={`${Cabine.className} tracking-wide p-2 leading-8 text-justify`}
               >
                 Pour les plus connectés, un grand bureau vitré permet de
                 travailler dans le calme et la sérénité. Le chalet a été conçu
@@ -215,14 +181,20 @@ export default function Home() {
                 suite dédiée ainsi qu’un ascenseur pour profiter des équipements
                 des niveaux inférieur et supérieur.
               </p>
-              <p className="p-4 leading-8 tracking-wide">
+              <p
+                className={`${Cabine.className} tracking-wide p-2 leading-8 text-justify`}
+              >
                 Accessibilité, authenticité, confort, tranquillité, détente,
                 nature… sont les maîtres-mots de votre séjour au CHALET RÉMY.
               </p>
-              <p className="p-4 leading-8 tracking-wide">
+              <p
+                className={`${Cabine.className} tracking-wide p-2 leading-8 text-justify`}
+              >
                 LE CHALET et L’APPARTEMENT sont loués indépendamment.
               </p>
-              <p className="p-4 leading-8 tracking-wide">
+              <p
+                className={`${Cabine.className} tracking-wide p-2 leading-8 text-justify`}
+              >
                 Vous pouvez également louer les deux simultanément. Une porte
                 communicante permet d’accéder facilement aux deux espaces.
               </p>
