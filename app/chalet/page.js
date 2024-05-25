@@ -151,8 +151,8 @@ export default function Home() {
             <a
               className={`${Cabine.className} mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
             >
-              <GiBunkBeds className="h-[16px] w-[16px] mr-2 text-pink-600 " />1
-              2 dortoirs
+              <GiBunkBeds className="h-[16px] w-[16px] mr-2 text-pink-600 " />2
+              dortoirs
             </a>
             <a
               className={`${Cabine.className} mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
