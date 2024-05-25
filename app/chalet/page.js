@@ -94,7 +94,7 @@ const items = [
 export default function Home() {
   return (
     <>
-      <section className="relative rounded-sm h-screen bg-chalet-pmr bg-cover bg-center flex flex-col justify-center items-center">
+      <section className="relative rounded-sm h-screen md:h-[400px] bg-chalet-pmr bg-cover bg-center flex flex-col justify-center items-center">
         <div className="absolute inset-0 bg-black opacity-40 "></div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full w-full mx-auto">
           <div className="text-center mt-20">

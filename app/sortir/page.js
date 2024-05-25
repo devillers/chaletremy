@@ -15,7 +15,7 @@ const DynamicMap = dynamic(() => import('../components/MapComponent'), {
 export default function Sortir() {
   return (
     <>
-      <section className="relative rounded-sm h-screen bg-cover bg-center flex flex-col justify-center items-center md:bg-chalet-seminaire">
+      <section className="relative rounded-sm h-screen md:h-[400px] bg-cover bg-center flex flex-col justify-center items-center md:bg-chalet-seminaire">
         {/* Video only visible on mobile */}
         <div className="block md:hidden absolute inset-0 w-full h-full">
           <VideoPlayer src="/videos/flat-video.mp4" />

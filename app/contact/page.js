@@ -34,7 +34,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="relative rounded-sm h-screen bg-cover bg-center flex flex-col justify-center items-center bg-chalet-app">
+         <section className="relative rounded-sm h-screen md:h-[400px] bg-chalet-pmr bg-cover bg-center flex flex-col justify-center items-center">
         {/* Video only visible on mobile */}
 
         {/* Overlay for darkening the background */}

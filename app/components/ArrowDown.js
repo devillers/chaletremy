@@ -29,7 +29,7 @@ export default function ArrowDown() {
       <button
         type="button"
         onClick={scrollToAbout}
-        className="fixed left-1/2 transform -translate-x-1/2 translate-y-1/2 p-3 rounded-full bg-white text-black shadow-lg hover:bg-gray-700 hover:text-white transition-opacity duration-300 opacity-100 blink"
+        className="block fixed left-1/2 md:hidden transform -translate-x-1/2 translate-y-1/2 p-3 rounded-full bg-white text-black shadow-lg hover:bg-gray-700 hover:text-white transition-opacity duration-300 opacity-100 blink"
         aria-label="Scroll to About section"
       >
         <svg
