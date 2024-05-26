@@ -1,8 +1,27 @@
 [
-  { "src": "/chalet/rdc-hall-0.jpg", "alt": "Rectangle Image 1" },
-  { "src": "/chalet/rdc-sam-0.jpg", "alt": "Rectangle Image 1" },
-  { "src": "/chalet/rdc-cuisine-0.jpg", "alt": "Rectangle Image 1" },
-  { "src": "/chalet/rdc-cuisine-1.jpg", "alt": "Rectangle Image 1" },
-  { "src": "/chalet/rdc-cuisine-2.jpg", "alt": "Rectangle Image 1" }
+  {
+    "src": "/chalet/rdc-hall-0.jpg",
+    "alt": "Rectangle Image 1",
+    "titre": "rdc"
+  },
+  {
+    "src": "/chalet/rdc-sam-0.jpg",
+    "alt": "Rectangle Image 1",
+    "titre": "SAM"
+  },
+  {
+    "src": "/chalet/rdc-cuisine-0.jpg",
+    "alt": "Rectangle Image 1",
+    "titre": "cuisine"
+  },
+  {
+    "src": "/chalet/rdc-cuisine-1.jpg",
+    "alt": "Rectangle Image 1",
+    "titre": "cuisine"
+  },
+  {
+    "src": "/chalet/rdc-cuisine-2.jpg",
+    "alt": "Rectangle Image 1",
+    "titre": "cuisine"
+  }
 ]
-

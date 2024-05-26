@@ -1,9 +1,12 @@
-
-  [
-    { "src": "/chalet/ss-cinema-0.jpg", "alt": "Rectangle Image 1" },
-    { "src": "/chalet/ss-videos-0.jpg", "alt": "Rectangle Image 1" }
- 
- 
-  ]
-
- 
+[
+  {
+    "src": "/chalet/ss-cinema-0.jpg",
+    "alt": "Rectangle Image 1",
+    "titre": "cinema"
+  },
+  {
+    "src": "/chalet/ss-videos-0.jpg",
+    "alt": "Rectangle Image 1",
+    "titre": "videogame"
+  }
+]

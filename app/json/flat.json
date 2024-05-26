@@ -1,10 +1,17 @@
 [
-    { "src": "/flat/flat-0.jpg", "alt": "Rectangle Image 1" },
-    { "src": "/flat/flat-1.jpg", "alt": "Rectangle Image 2" },
-    { "src": "/flat/flat-2.jpg", "alt": "Rectangle Image 3" },
-    { "src": "/flat/flat-3.jpg", "alt": "Rectangle Image 4" },
-    { "src": "/flat/flat-4.jpg", "alt": "Rectangle Image 5" },
-    { "src": "/flat/flat-5.jpg", "alt": "Rectangle Image 6" },
-    { "src": "/flat/flat-6.jpg", "alt": "Rectangle Image 7" }
-  ]
-  
+  { "src": "/flat/flat-0.jpg", "alt": "Rectangle Image 1", "titre": "salon" },
+  {
+    "src": "/flat/flat-1.jpg",
+    "alt": "Rectangle Image 2",
+    "titre": "salle"
+  },
+  {
+    "src": "/flat/flat-2.jpg",
+    "alt": "Rectangle Image 3",
+    "titre": "sdb"
+  },
+  { "src": "/flat/flat-3.jpg", "alt": "Rectangle Image 4", "titre": "salon" },
+  { "src": "/flat/flat-4.jpg", "alt": "Rectangle Image 5", "titre": "chambre" },
+  { "src": "/flat/flat-5.jpg", "alt": "Rectangle Image 6", "titre": "cuisine" },
+  { "src": "/flat/flat-6.jpg", "alt": "Rectangle Image 7", "titre": "cuisine" }
+]

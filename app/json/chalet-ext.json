@@ -1,8 +1,12 @@
-
-
-  [
-    { "src": "/chalet/ext-vue-0.jpg", "alt": "Rectangle Image 1" },
-    { "src": "/chalet/ext-vue-1.jpg", "alt": "Rectangle Image 1" }
- 
- 
-  ]
+[
+  {
+    "src": "/chalet/ext-vue-0.jpg",
+    "alt": "Rectangle Image 1",
+    "titre": "vue"
+  },
+  {
+    "src": "/chalet/ext-vue-1.jpg",
+    "alt": "Rectangle Image 1",
+    "titre": "vue ext"
+  }
+]
