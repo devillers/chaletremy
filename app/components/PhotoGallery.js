@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
-
 import { IoMdClose } from 'react-icons/io';
 
 export default function PhotoGallery({ images }) {
@@ -29,6 +28,12 @@ export default function PhotoGallery({ images }) {
     );
   };
 
+  const handleOutsideClick = (e) => {
+    if (e.target.classList.contains('modal-overlay')) {
+      closePopup();
+    }
+  };
+
   return (
     <div className="container mx-auto p-0">
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2">
@@ -48,7 +53,10 @@ export default function PhotoGallery({ images }) {
       </div>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 rounded-sm flex items-center justify-center z-50">
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 rounded-sm flex items-center justify-center z-50 modal-overlay"
+          onClick={handleOutsideClick}
+        >
           <div className="relative bg-white max-w-4xl max-h-[90vh] w-auto h-auto rounded-md">
             <button
               className="absolute top-0 right-0 m-2 text-white text-[30px] opacity-50 hover:transition-opacity duration-700 hover:opacity-100"
