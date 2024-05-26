@@ -33,3 +33,15 @@ html {
 .leaflet-control {
   display: none;
 }
+
+.custom-lightbox .ril__outer {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* lightbox-custom.css */
+
+.lightbox-border {
+  border: 10px solid white; /* Adjust the width of the border as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better visibility */
+  border-radius: 8px; /* Optional: add rounded corners */
+}

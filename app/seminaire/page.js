@@ -39,7 +39,23 @@ export default function Home() {
         id="about"
         className="h-screen p-6 flex-col justify-center items-center leading-6 text-justify"
       >
-        content
+        <div className="">
+          <p>
+            Le CHALET REMY peut également accueillir vos réunions
+            professionnelles et vos séminaires d’entreprise. Quoi de mieux que
+            de réunir son équipe en pleine nature dans un écrin élégant ? Le
+            calme ambiant et le panorama époustouflant sur le Massif du
+            Mont-Blanc sont parfaits pour apporter de la sérénité à vos
+            collaborateurs. L’atmosphère des lieux est idéale pour rendre vos
+            moments de team building efficaces et inoubliables. Le CHALET REMY
+            offre également toutes les conditions favorables aux membres de vos
+            COMEX, CODIR, pour se retirer du tumulte et prendre le recul
+            nécessaire pour acter des décisions stratégiques et pérennes. Notre
+            conciergerie se charge des services annexes à l’hébergement, tels
+            que collation, repas, transports, excursions, animations…
+            N’hésitez-pas à nous interroger pour un devis sur-mesure !
+          </p>
+        </div>
       </section>
 
       <Arrow />

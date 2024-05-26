@@ -1,62 +1,54 @@
 import { useState } from 'react';
 
-const Gallery = ({ images }) => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
+export default function PhotoGallery({ images }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState(null);
 
-  const handleImageClick = (image) => {
-    setSelectedImage(image);
-    setIsPopupOpen(true);
+  const openPopup = (image) => {
+    setCurrentImage(image);
+    setIsOpen(true);
   };
 
   const closePopup = () => {
-    setIsPopupOpen(false);
-    setSelectedImage(null);
+    setIsOpen(false);
+    setCurrentImage(null);
   };
 
   return (
-    <div>
-      <div className="max-w-4xl grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 mx-auto z-10">
+    <div className="container mx-auto p-0">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2">
         {images.map((image, index) => (
           <div
             key={index}
-            className={`${
-              index % 2 === 0
-                ? 'aspect-w-3 aspect-h-2'
-                : 'aspect-w-2 aspect-h-1'
-            }`}
-            onClick={() => handleImageClick(image)}
+            className="cursor-pointer"
+            onClick={() => openPopup(image)}
           >
             <img
               src={image.src}
               alt={image.alt}
-              className="object-cover w-full h-full rounded-sm shadow-sm cursor-pointer"
+              className="w-full h-auto object-cover"
             />
           </div>
         ))}
       </div>
 
-      {isPopupOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-          <div className="relative p-4 bg-white rounded-lg shadow-lg max-w-3xl max-h-[80vh] w-full h-auto">
+      {isOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="relative bg-white max-w-4xl max-h-[90vh] w-auto h-auto rounded-md">
             <button
-              className="absolute top-2 right-2 text-black text-2xl"
+              className="absolute top-0 right-0 m-2 text-black"
               onClick={closePopup}
             >
-              &times;
+              X
             </button>
-            <div className="flex items-center justify-center h-full w-full">
-              <img
-                src={selectedImage?.src}
-                alt={selectedImage?.alt}
-                className="object-contain max-h-full max-w-full"
-              />
-            </div>
+            <img
+              src={currentImage.src}
+              alt={currentImage.alt}
+              className="w-full h-full object-contain"
+            />
           </div>
         </div>
       )}
     </div>
   );
-};
-
-export default Gallery;
+}

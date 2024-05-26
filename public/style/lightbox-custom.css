@@ -1,0 +1,33 @@
+.custom-lightbox .ril__outer {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* lightbox-custom.css */
+
+.lightbox-border {
+  border: 10px solid white; /* Adjust the width of the border as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better visibility */
+  border-radius: 8px; /* Optional: add rounded corners */
+}
+
+.yarl__slide_image {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.yarl__slide .yarl__slide_current .yarl__flex_center {
+  width: 80%;
+}
+
+.lightbox-modal {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Adjust the background color and opacity as needed */
+}
+
+.lightbox-border {
+  border: 10px solid white; /* Adjust the width of the border as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better visibility */
+  border-radius: 8px; /* Optional: add rounded corners */
+}

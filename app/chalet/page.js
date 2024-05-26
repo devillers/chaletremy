@@ -226,6 +226,7 @@ export default function Home() {
               description="terrasse - jacuzzi - chargeurs "
             >
               {/* <h3> EXTERIEUR </h3> */}
+
               <PhotoGallery images={extPic} />
             </Accordion>
           </div>
