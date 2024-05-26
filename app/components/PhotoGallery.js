@@ -1,17 +1,32 @@
 import { useState } from 'react';
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
+
+import { IoMdClose } from 'react-icons/io';
 
 export default function PhotoGallery({ images }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [currentImage, setCurrentImage] = useState(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(null);
 
-  const openPopup = (image) => {
-    setCurrentImage(image);
+  const openPopup = (index) => {
+    setCurrentImageIndex(index);
     setIsOpen(true);
   };
 
   const closePopup = () => {
     setIsOpen(false);
-    setCurrentImage(null);
+    setCurrentImageIndex(null);
+  };
+
+  const showNextImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const showPreviousImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
   };
 
   return (
@@ -21,7 +36,7 @@ export default function PhotoGallery({ images }) {
           <div
             key={index}
             className="cursor-pointer"
-            onClick={() => openPopup(image)}
+            onClick={() => openPopup(index)}
           >
             <img
               src={image.src}
@@ -36,16 +51,28 @@ export default function PhotoGallery({ images }) {
         <div className="fixed inset-0 bg-black bg-opacity-50 rounded-sm flex items-center justify-center z-50">
           <div className="relative bg-white max-w-4xl max-h-[90vh] w-auto h-auto rounded-md">
             <button
-              className="absolute top-0 right-0 m-2 text-black"
+              className="absolute top-0 right-0 m-2 text-white text-[30px] opacity-50 hover:transition-opacity duration-700 hover:opacity-100"
               onClick={closePopup}
             >
-              X
+              <IoMdClose />
             </button>
             <img
-              src={currentImage.src}
-              alt={currentImage.alt}
-              className="w-full h-full object-contain"
+              src={images[currentImageIndex].src}
+              alt={images[currentImageIndex].alt}
+              className="w-full h-full object-contain rounded-sm"
             />
+            <button
+              className="absolute left-2 top-1/2 transform -translate-y-1/2 m-2 text-white text-[30px] opacity-50 hover:transition-opacity duration-700 hover:opacity-90"
+              onClick={showPreviousImage}
+            >
+              <FaArrowAltCircleLeft />
+            </button>
+            <button
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 m-2 text-white text-[30px] opacity-50 hover:transition-opacity duration-700 hover:opacity-90"
+              onClick={showNextImage}
+            >
+              <FaArrowAltCircleRight />
+            </button>
           </div>
         </div>
       )}
