@@ -26,14 +26,14 @@ export default function PhotoGallery({ images }) {
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover "
             />
           </div>
         ))}
       </div>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black bg-opacity-50 rounded-sm flex items-center justify-center z-50">
           <div className="relative bg-white max-w-4xl max-h-[90vh] w-auto h-auto rounded-md">
             <button
               className="absolute top-0 right-0 m-2 text-black"
