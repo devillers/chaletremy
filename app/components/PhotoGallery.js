@@ -54,7 +54,7 @@ export default function PhotoGallery({ images }) {
 
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 rounded-sm flex items-center justify-center z-50 modal-overlay"
+          className="fixed inset-0 bg-black bg-opacity-60 rounded-sm flex items-center justify-center z-50 modal-overlay"
           onClick={handleOutsideClick}
         >
           <div className="relative bg-white max-w-4xl max-h-[90vh] w-auto h-auto rounded-md">
@@ -67,7 +67,7 @@ export default function PhotoGallery({ images }) {
             <img
               src={images[currentImageIndex].src}
               alt={images[currentImageIndex].alt}
-              className="w-full h-full object-contain rounded-sm"
+              className="w-full h-full object-contain rounded-sm "
             />
             <button
               className="absolute left-2 top-1/2 transform -translate-y-1/2 m-2 text-white text-[30px] opacity-50 hover:transition-opacity duration-700 hover:opacity-90"
@@ -81,7 +81,7 @@ export default function PhotoGallery({ images }) {
             >
               <FaArrowAltCircleRight />
             </button>
-            <h3 className="uppercase absolute bottom-[21px] -left-[6px] text-[90px] text-white text-opacity-20">
+            <h3 className="uppercase absolute bottom-[21px] -left-[3px] text-[90px] text-white text-opacity-20">
               {images[currentImageIndex].titre}
             </h3>
           </div>
