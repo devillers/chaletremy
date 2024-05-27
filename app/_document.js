@@ -4,7 +4,8 @@ const document = () => {
   return (
     <Html lang="fr">
       <Head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+      <link rel="icon" type="image/png" href="/favicon.png" />
+
       </Head>
 
       <body className="bg-white">

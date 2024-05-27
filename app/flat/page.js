@@ -10,14 +10,14 @@ import { IoBedOutline } from 'react-icons/io5';
 import { GiBunkBeds } from 'react-icons/gi';
 import { TbBath } from 'react-icons/tb';
 import Accordion from '../components/Accordion'; // Importer le composant Accordion
-import dynamic from 'next/dynamic';
-import 'leaflet/dist/leaflet.css';
+// import dynamic from 'next/dynamic';
+// import 'leaflet/dist/leaflet.css';
 import imagesData from '../json/flat.json';
 
-// Dynamically import the MapComponent for client-side rendering
-const DynamicMap = dynamic(() => import('../components/MapComponent'), {
-  ssr: false, // This ensures Leaflet is only rendered on the client side
-});
+// // Dynamically import the MapComponent for client-side rendering
+// const DynamicMap = dynamic(() => import('../components/MapComponent'), {
+//   ssr: false, // This ensures Leaflet is only rendered on the client side
+// });
 
 const items = [
   {
@@ -244,7 +244,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section
+      {/* <section
         id="about"
         className=" h-[600px] px-2 flex flex-col md:flex-row justify-center leading-6 text-justify overflow-hidden md:p-0 max-w-[900px] mx-auto"
       >
@@ -254,7 +254,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full md:w-1/2 h-1/2 md:max-h-[300px] bg-slate-100 "></div>
-      </section>
+      </section> */}
 
       <Arrow />
     </>

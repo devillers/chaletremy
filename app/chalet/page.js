@@ -10,8 +10,8 @@ import { IoBedOutline } from 'react-icons/io5';
 import { GiBunkBeds } from 'react-icons/gi';
 import { TbBath } from 'react-icons/tb';
 import Accordion from '../components/Accordion'; // Importer le composant Accordion
-import dynamic from 'next/dynamic';
-import 'leaflet/dist/leaflet.css';
+// import dynamic from 'next/dynamic';
+// import 'leaflet/dist/leaflet.css';
 import sousSolPic from '../json/chalet-ss.json';
 import rdcPic from '../json/chalet-rdc.json';
 import etPic1 from '../json/chalet-1.json';
@@ -192,27 +192,21 @@ export default function Home() {
             </Accordion>
 
             <Accordion title=" SOUS SOL" description="cinéma - sauna ">
-              {/* <h3>SOUS SOL </h3> */}
               <PhotoGallery images={sousSolPic} />
             </Accordion>
             <Accordion title="RDC" description="cuisine - salon - suite PMR">
-              {/* <h3>Côté aménagements handicapé </h3> */}
               <PhotoGallery images={rdcPic} />
             </Accordion>
             <Accordion title="1er ETAGE" description="salon - suites">
-              {/* <h3> 1 ETAGE </h3> */}
               <PhotoGallery images={etPic1} />
             </Accordion>
             <Accordion title="2nd ETAGE" description="dortoirs">
-              {/* <h3> 2 ETAGE </h3> */}
               <PhotoGallery images={etPic2} />
             </Accordion>
             <Accordion
               title="EXTERIEUR"
               description="terrasse - jacuzzi - chargeurs "
             >
-              {/* <h3> EXTERIEUR </h3> */}
-
               <PhotoGallery images={extPic} />
             </Accordion>
           </div>
@@ -234,19 +228,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-      {/* Content */}
-      {/* <section
-        id="about"
-        className=" md:mt-12 h-[300px] px-2 flex flex-col md:flex-row justify-center leading-6 text-justify overflow-hidden md:p-0 md:max-w-[800px] mx-auto"
-      >
-        <div className="w-full md:w-1/2 h-1/2 md:max-h-[300px] flex">
-          <div className="w-full ">
-            <DynamicMap address="520 route des communailles, 74170, Saint Gervais les bains " />
-          </div>
-        </div>
-        <div className="w-full md:w-1/2 h-1/2 md:max-h-[300px] bg-slate-100 "></div>
-      </section> */}
-
       <Arrow />
     </>
   );

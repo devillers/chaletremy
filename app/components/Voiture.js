@@ -42,18 +42,14 @@ export default function Voiture() {
         </h4>
         <div className="p-2">
           {data.map((row, index) => (
-            <div className="pt-2 text-[10px] md:text-[12px]">
-              <a className="  text-yellow-800 uppercase">{row.column1}</a>
-              <div
-                key={index}
-                className={`${comforta.className} p-2 flex justify-between`}
-              >
-                <a className=" font-light tracking-wide text-gray-900">
+            <div key={index} className="pt-2 text-[10px] md:text-[12px]">
+              <a className="text-yellow-800 uppercase">{row.column1}</a>
+              <div className={`${comforta.className} p-2 flex justify-between`}>
+                <a className="font-light tracking-wide text-gray-900">
                   {row.column2}
                 </a>
-                <a className=" text-gray-500">{row.column3}</a>
+                <a className="text-gray-500">{row.column3}</a>
               </div>
-
               <hr />
             </div>
           ))}
