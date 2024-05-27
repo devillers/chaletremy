@@ -81,7 +81,7 @@ export default function PhotoGallery({ images }) {
             >
               <FaArrowAltCircleRight />
             </button>
-            <h3 className="uppercase absolute bottom-[27px] -left-[6px] text-[90px] text-white text-opacity-20">
+            <h3 className="uppercase absolute bottom-[21px] -left-[6px] text-[90px] text-white text-opacity-20">
               {images[currentImageIndex].titre}
             </h3>
           </div>
