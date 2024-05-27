@@ -18,10 +18,10 @@ import etPic1 from '../json/chalet-1.json';
 import etPic2 from '../json/chalet-2.json';
 import extPic from '../json/chalet-ext.json';
 
-// Dynamically import the MapComponent for client-side rendering
-const DynamicMap = dynamic(() => import('../components/MapComponent'), {
-  ssr: false, // This ensures Leaflet is only rendered on the client side
-});
+// // Dynamically import the MapComponent for client-side rendering
+// const DynamicMap = dynamic(() => import('../components/MapComponent'), {
+//   ssr: false, // This ensures Leaflet is only rendered on the client side
+// });
 
 const items = [
   {
@@ -80,20 +80,6 @@ const items = [
     ),
     text: 'jacuzzi',
   },
-  {
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="30px"
-        viewBox="0 -960 960 960"
-        width="24px"
-        fill="#be185d"
-      >
-        <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-      </svg>
-    ),
-    text: 'sauna',
-  },
 ];
 
 export default function Home() {
@@ -145,7 +131,7 @@ export default function Home() {
               className={`${Cabine.className} mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
             >
               <TbMeterSquare className="h-[20px] w-[20px] mr-2 text-pink-600 " />
-              530 m2
+              525 m2
             </a>
             <a
               className={`${Cabine.className} mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
@@ -210,7 +196,7 @@ export default function Home() {
               <PhotoGallery images={sousSolPic} />
             </Accordion>
             <Accordion title="RDC" description="cuisine - salon - suite PMR">
-              {/* <h3>RDC </h3> */}
+              {/* <h3>Côté aménagements handicapé </h3> */}
               <PhotoGallery images={rdcPic} />
             </Accordion>
             <Accordion title="1er ETAGE" description="salon - suites">
@@ -237,7 +223,7 @@ export default function Home() {
         id="about"
         className={`${Cabine.className}  flex justify-center items-center`}
       >
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 p-2">
           {items.map((item, index) => (
             <div key={index} className="p-4 shadow-md rounded-md">
               <div className="flex items-center justify-center">
@@ -249,9 +235,9 @@ export default function Home() {
         </div>
       </section>
       {/* Content */}
-      <section
+      {/* <section
         id="about"
-        className=" h-[600px] px-2 flex flex-col md:flex-row justify-center leading-6 text-justify overflow-hidden md:p-0 max-w-[900px] mx-auto"
+        className=" md:mt-12 h-[300px] px-2 flex flex-col md:flex-row justify-center leading-6 text-justify overflow-hidden md:p-0 md:max-w-[800px] mx-auto"
       >
         <div className="w-full md:w-1/2 h-1/2 md:max-h-[300px] flex">
           <div className="w-full ">
@@ -259,7 +245,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full md:w-1/2 h-1/2 md:max-h-[300px] bg-slate-100 "></div>
-      </section>
+      </section> */}
 
       <Arrow />
     </>

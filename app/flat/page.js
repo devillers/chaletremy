@@ -144,7 +144,7 @@ export default function Home() {
               className={`${Cabine.className} mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}
             >
               <TbMeterSquare className="h-[20px] w-[20px] mr-2 text-pink-600 " />
-              70 m2
+              68 m2
             </a>
             <a
               className={`${Cabine.className} mt-1 ml-4 tracking-wide uppercase text-[12px] flex items-center`}

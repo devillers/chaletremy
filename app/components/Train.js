@@ -3,14 +3,14 @@ import { comforta, lobster } from '../font';
 export default function Train() {
   const data = [
     {
-      column1:
-        'Gare SNCF Saint-Gervais-Les-Bains – Le Fayet - TGV depuis Paris',
-      column2: '5h00',
+      column1: 'Gare SNCF Saint-Gervais-Les-Bains',
+      column2: 'Le Fayet - TGV depuis Paris',
+      column3: '5h00',
     },
     {
-      column1:
-        'LEMAN Express depuis Genève (MONT-BLANC EXPRESS – Vallée de Chamonix)',
-      column2: '1h45',
+      column1: 'LEMAN Express depuis Genève ',
+      column2: '(MONT-BLANC EXPRESS – Vallée de Chamonix)',
+      column3: '1h45',
     },
   ];
 
@@ -23,12 +23,16 @@ export default function Train() {
             <div>
               <div
                 key={index}
-                className={`${comforta.className} p-2 flex justify-between`}
+                className={`${comforta.className} p-2 flex flex-col justify-between `}
               >
-                <a className="  font-light tracking-wide text-gray-900">
-                  {row.column1}
-                </a>
-                <a className="  text-gray-500">{row.column2}</a>
+                <div className="flex flex-row justify-between">
+                  <p className="  font-light tracking-wide text-gray-900">
+                    {row.column1}
+                  </p>
+                  <p className="  text-gray-500">{row.column3}</p>
+                </div>
+
+                <p className="  text-gray-500">{row.column2}</p>
               </div>
 
               <hr />

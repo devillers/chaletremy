@@ -45,9 +45,8 @@ const MapComponent = ({ address }) => {
   return (
     <div
       id="map"
-      className="z-10 h-full w-full"
-
-      // style={{ height: '100%', width: '100%' }}
+      className="z-10 h-full "
+      style={{ height: '100%', width: '100%' }}
     ></div>
   );
 };

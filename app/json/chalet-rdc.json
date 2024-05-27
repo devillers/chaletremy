@@ -23,5 +23,26 @@
     "src": "/chalet/rdc-cuisine-2.jpg",
     "alt": "Rectangle Image 1",
     "titre": "cuisine"
+  },
+  {
+    "src": "/chalet/rdc-pmr-0.jpeg",
+    "alt": "Rectangle Image 1",
+    "titre": "suite pmr"
+  },
+  {
+    "src": "/chalet/rdc-pmr-1.jpeg",
+    "alt": "suite pmre",
+    "titre": "suite pmr"
+  },
+
+  {
+    "src": "/chalet/rdc-pmr-2.jpeg",
+    "alt": "suite pmer",
+    "titre": "suite pmr"
+  },
+  {
+    "src": "/chalet/rdc-pmr-3.jpeg",
+    "alt": "suite d",
+    "titre": "suite pmr"
   }
 ]
