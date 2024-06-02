@@ -18,9 +18,11 @@ import { Cinema } from '../components/icons/Cinema';
 import { VideoGame } from '../components/icons/VideoGame';
 import { Fireplace } from '../components/icons/FirePlace';
 
-import imagesData from '../json/flat.json';
+//import imagesData from '../json/flat.json';
 
 export default function Home() {
+  const icalUrl =
+    'https://www.airbnb.fr/calendar/ical/48092697.ics?s=f5727b76f38ce2964ed998a7962cb7b7';
   return (
     <>
       <section className="relative rounded-sm h-screen md:h-[400px] bg-chalet-pmr bg-cover bg-center flex flex-col justify-center items-center">
@@ -171,6 +173,7 @@ export default function Home() {
           <Sauna />
         </div>
       </section>
+
       {/* <section
         id="about"
         className=" h-[600px] px-2 flex flex-col md:flex-row justify-center leading-6 text-justify overflow-hidden md:p-0 max-w-[900px] mx-auto"
