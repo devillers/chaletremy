@@ -54,10 +54,10 @@ export default function PhotoGallery({ images }) {
 
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-60 rounded-sm flex items-center justify-center z-50 modal-overlay"
+          className="fixed inset-0 bg-black bg-opacity-60 rounded-sm flex items-center justify-center z-50 modal-overlay "
           onClick={handleOutsideClick}
         >
-          <div className="relative bg-white max-w-4xl max-h-[90vh] w-auto h-auto rounded-md">
+          <div className="relative bg-white max-w-4xl max-h-[90vh] w-auto h-auto rounded-md p-2">
             <button
               className="absolute top-0 right-0 m-2 text-white text-[30px] opacity-50 hover:transition-opacity duration-700 hover:opacity-100"
               onClick={closePopup}
@@ -90,3 +90,16 @@ export default function PhotoGallery({ images }) {
     </div>
   );
 }
+
+
+const Gallery = () => {
+  return (
+    <div className="gallery flex flex-wrap gap-4">
+      {images.map((src, index) => (
+        <div key={index} className="relative w-1/3 aspect-w-1 aspect-h-1">
+          <Image src={src} alt={`Image ${index + 1}`} layout="fill" objectFit="cover" />
+        </div>
+      ))}
+    </div>
+  );
+};

@@ -9,78 +9,17 @@ import { IoPeople } from 'react-icons/io5';
 import { IoBedOutline } from 'react-icons/io5';
 import { GiBunkBeds } from 'react-icons/gi';
 import { TbBath } from 'react-icons/tb';
-import Accordion from '../components/Accordion'; // Importer le composant Accordion
-// import dynamic from 'next/dynamic';
-// import 'leaflet/dist/leaflet.css';
+import { Jacuzzi } from '../components/icons/Jacuzzi';
+import { Cinema } from '../components/icons/Cinema';
+import Accordion from '../components/Accordion';
 import sousSolPic from '../json/chalet-ss.json';
 import rdcPic from '../json/chalet-rdc.json';
 import etPic1 from '../json/chalet-1.json';
 import etPic2 from '../json/chalet-2.json';
 import extPic from '../json/chalet-ext.json';
-
-// // Dynamically import the MapComponent for client-side rendering
-// const DynamicMap = dynamic(() => import('../components/MapComponent'), {
-//   ssr: false, // This ensures Leaflet is only rendered on the client side
-// });
-
-const items = [
-  {
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="30px"
-        viewBox="0 -960 960 960"
-        width="24px"
-        fill="#be185d"
-      >
-        <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-      </svg>
-    ),
-    text: 'salle Jeux videos',
-  },
-  {
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="30px"
-        viewBox="0 -960 960 960"
-        width="24px"
-        fill="#be185d"
-      >
-        <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-      </svg>
-    ),
-    text: 'salle de cinema',
-  },
-  {
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="30px"
-        viewBox="0 -960 960 960"
-        width="24px"
-        fill="#be185d"
-      >
-        <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-      </svg>
-    ),
-    text: 'cheminée',
-  },
-  {
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="30px"
-        viewBox="0 -960 960 960"
-        width="24px"
-        fill="#be185d"
-      >
-        <path d="M80-200v-240q0-27 11-49t29-39v-112q0-50 35-85t85-35h160q23 0 43 8.5t37 23.5q17-15 37-23.5t43-8.5h160q50 0 85 35t35 85v112q18 17 29 39t11 49v240h-80v-80H160v80H80Zm440-360h240v-80q0-17-11.5-28.5T720-680H560q-17 0-28.5 11.5T520-640v80Zm-320 0h240v-80q0-17-11.5-28.5T400-680H240q-17 0-28.5 11.5T200-640v80Zm-40 200h640v-80q0-17-11.5-28.5T760-480H200q-17 0-28.5 11.5T160-440v80Zm640 0H160h640Z" />
-      </svg>
-    ),
-    text: 'jacuzzi',
-  },
-];
+import { VideoGame } from '../components/icons/VideoGame';
+import { Fireplace } from '../components/icons/FirePlace';
+import { Sauna } from '../components/icons/Sauna';
 
 export default function Home() {
   return (
@@ -100,16 +39,16 @@ export default function Home() {
             <ArrowDown />
           </div>
         </div>
-        <h3 className="uppercase absolute -bottom-[5px] -left-[2px] text-5xl text-white text-opacity-40">
+        <h3 className="uppercase absolute -bottom-[6px] -left-[2px] text-5xl text-white text-opacity-40">
           {' '}
           Le Chalet
         </h3>
-        <div
-          className={`${Cabine.className} uppercase absolute bottom-16 left-6 border-pink-600 border-[1px] bg-pink-900 bg-opacity-20 rounded-md shadow-sm tracking-wide text-white text-[14px] p-4`}
+        <p
+          className={`${Cabine.className} uppercase absolute bottom-16 left-6 border-pink-600 border-[1px] bg-pink-900 bg-opacity-20 rounded-md shadow-sm tracking-wide text-white text-[14px] p-4 hover:bg-pink-600 hover:bg-opacity-30`}
           href="#about"
         >
           voir les photos
-        </div>
+        </p>
       </section>
 
       <section
@@ -211,21 +150,17 @@ export default function Home() {
             </Accordion>
           </div>
         </div>
-        <div id="about">{/* a faire  */}</div>
       </section>
       <section
         id="about"
         className={`${Cabine.className}  flex justify-center items-center`}
       >
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 p-2">
-          {items.map((item, index) => (
-            <div key={index} className="p-4 shadow-md rounded-md">
-              <div className="flex items-center justify-center">
-                {item.svg}
-                <p className="m-3">{item.text}</p>
-              </div>
-            </div>
-          ))}
+          <Jacuzzi />
+          <Cinema />
+          <VideoGame />
+          <Fireplace />
+          <Sauna />
         </div>
       </section>
       <Arrow />
