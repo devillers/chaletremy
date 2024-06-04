@@ -98,7 +98,7 @@ export default function Home() {
               <TbBath className="text-lg mr-2 text-pink-600 " />1 sdb
             </a>
           </div>
-          <div className="text-[12px] md:text-[13px] mt-4">
+          <div className="text-[12px] md:text-[13px] mt-4 grid grid-cols-1 sm:grid-cols-2">
             <p
               className={`${Cabine.className}  mt-7 tracking-wide p-4 leading-8 text-justify`}
             >
@@ -111,6 +111,11 @@ export default function Home() {
               pour un repos bien mérité après une longue journée au grand air.
               Un cadre parfait pour des vacances inoubliables !
             </p>
+            <div className="hidden sm:block">
+              <Calendar />
+            </div>
+          </div>
+          <div>
             <Accordion title="infos supplémentaires">
               <p
                 className={`${Cabine.className} tracking-wide p-2 leading-8 text-justify`}
@@ -174,7 +179,7 @@ export default function Home() {
           <Sauna />
         </div>
       </section>
-      <section>
+      <section className="sm:hidden">
         <Calendar />
       </section>
 

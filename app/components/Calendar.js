@@ -61,7 +61,7 @@ const Calendar = () => {
         {daysInMonth.map((day, index) => (
           <div
             key={index}
-            className={`border p-2 h-10 sm:h-20 flex items-center justify-center ${
+            className={`border p-2 h-10 sm:h-10 flex items-center justify-center ${
               day && isBooked(day) ? 'bg-red-500 text-white' : 'bg-white'
             }`}
           >
@@ -85,12 +85,12 @@ const Calendar = () => {
   };
 
   return (
-    <div className="p-4 max-w-full md:max-w-2xl mx-auto bg-white shadow-lg rounded-lg">
+    <div className="p-4  max-w-[350px] mx-auto bg-white ">
       <div className="flex justify-between items-center mb-4">
         <button onClick={handlePrevMonth} className="btn btn-primary">
           Previous
         </button>
-        <h2 className="text-lg md:text-xl font-bold">
+        <h2 className="text-lg sm:text-[15px] font-bold">
           {currentMonth.toLocaleString(locale, { month: 'long' })}{' '}
           {currentMonth.getFullYear()}
         </h2>
@@ -102,7 +102,7 @@ const Calendar = () => {
         {['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'].map((day) => (
           <div
             key={day}
-            className="border p-2 text-center text-xs sm:text-base"
+            className="border p-2 text-center text-xs sm:text-[12px]"
           >
             {day}
           </div>
