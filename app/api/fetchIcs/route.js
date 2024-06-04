@@ -1,7 +1,7 @@
 import ical from 'ical';
 
 const icsUrl =
-  'https://www.airbnb.fr/calendar/ical/914966409368076226.ics?s=85d4aecdd0a1a478ffd7bbd93e89844a';
+  'https://www.airbnb.fr/calendar/ical/915825375084506990.ics?s=9cd9babb24b79ee8f61cab6600ac0483';
 
 const parseIcs = (icsData) => {
   const events = ical.parseICS(icsData);

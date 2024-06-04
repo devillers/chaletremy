@@ -98,7 +98,7 @@ export default function Home() {
               <TbBath className="text-lg mr-2 text-pink-600 " />1 sdb
             </a>
           </div>
-          <div className="text-[12px] md:text-[13px] mt-4 grid grid-cols-1 sm:grid-cols-2">
+          <div className="text-[12px]  mt-4 grid grid-cols-1 sm:grid-cols-2">
             <p
               className={`${Cabine.className}  mt-7 tracking-wide p-4 leading-8 text-justify`}
             >
@@ -118,7 +118,7 @@ export default function Home() {
           <div>
             <Accordion title="infos supplémentaires">
               <p
-                className={`${Cabine.className} tracking-wide p-2 leading-8 text-justify`}
+                className={`${Cabine.className} tracking-wide p-2 leading-8 text-justify text-[12px]`}
               >
                 L'appartement se compose de 2 chambres équipées d'une literie
                 neuve et confortable : La chambre principale offre intimité et
@@ -171,15 +171,18 @@ export default function Home() {
         id="about"
         className={`${Cabine.className}  flex justify-center items-center`}
       >
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 p-2">
-          <Jacuzzi />
-          <Cinema />
-          <VideoGame />
-          <Fireplace />
-          <Sauna />
+        <div>
+          <h4 className="text-[25px] ml-4 mb-2">Equipements</h4>
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-2 p-2 mt-4">
+            <Jacuzzi />
+            <Cinema />
+            <VideoGame />
+            <Fireplace />
+            <Sauna />
+          </div>
         </div>
       </section>
-      <section className="sm:hidden">
+      <section className="sm:hidden text-[12px]">
         <Calendar />
       </section>
 

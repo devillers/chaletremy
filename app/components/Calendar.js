@@ -1,6 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { FaRegArrowAltCircleLeft } from 'react-icons/fa';
+import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 
 const Calendar = () => {
   const [events, setEvents] = useState([]);
@@ -61,8 +63,8 @@ const Calendar = () => {
         {daysInMonth.map((day, index) => (
           <div
             key={index}
-            className={`border p-2 h-10 sm:h-10 flex items-center justify-center ${
-              day && isBooked(day) ? 'bg-red-500 text-white' : 'bg-white'
+            className={`border p-2 h-10 flex items-center justify-center ${
+              day && isBooked(day) ? 'bg-pink-500 text-white' : 'bg-white'
             }`}
           >
             {day && <div>{day.getDate()}</div>}
@@ -85,25 +87,22 @@ const Calendar = () => {
   };
 
   return (
-    <div className="p-4  max-w-[350px] mx-auto bg-white ">
+    <div className="p-4 max-w-[350px] mx-auto bg-white ">
       <div className="flex justify-between items-center mb-4">
-        <button onClick={handlePrevMonth} className="btn btn-primary">
-          Previous
+        <button onClick={handlePrevMonth} className=" text-[18px]">
+          <FaRegArrowAltCircleLeft />
         </button>
-        <h2 className="text-lg sm:text-[15px] font-bold">
+        <h2 className=" text-[13px] font-bold">
           {currentMonth.toLocaleString(locale, { month: 'long' })}{' '}
           {currentMonth.getFullYear()}
         </h2>
-        <button onClick={handleNextMonth} className="btn btn-primary">
-          Next
+        <button onClick={handleNextMonth} className="text-[18px]">
+          <FaRegArrowAltCircleRight />
         </button>
       </div>
       <div className="grid grid-cols-7 gap-1 mb-1">
         {['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'].map((day) => (
-          <div
-            key={day}
-            className="border p-2 text-center text-xs sm:text-[12px]"
-          >
+          <div key={day} className="border p-2 text-center text-[12px]">
             {day}
           </div>
         ))}
