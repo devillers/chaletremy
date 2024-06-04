@@ -17,6 +17,7 @@ import { Jacuzzi } from '../components/icons/Jacuzzi';
 import { Cinema } from '../components/icons/Cinema';
 import { VideoGame } from '../components/icons/VideoGame';
 import { Fireplace } from '../components/icons/FirePlace';
+import Calendar from '../components/Calendar';
 
 //import imagesData from '../json/flat.json';
 
@@ -173,18 +174,9 @@ export default function Home() {
           <Sauna />
         </div>
       </section>
-
-      {/* <section
-        id="about"
-        className=" h-[600px] px-2 flex flex-col md:flex-row justify-center leading-6 text-justify overflow-hidden md:p-0 max-w-[900px] mx-auto"
-      >
-        <div className="w-full md:w-1/2 h-1/2 md:max-h-[300px] flex">
-          <div className="w-full ">
-            <DynamicMap address="520 route des communailles, 74170, Saint Gervais les bains " />
-          </div>
-        </div>
-        <div className="w-full md:w-1/2 h-1/2 md:max-h-[300px] bg-slate-100 "></div>
-      </section> */}
+      <section>
+        <Calendar />
+      </section>
 
       <Arrow />
     </>
