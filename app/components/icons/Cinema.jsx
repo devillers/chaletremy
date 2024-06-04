@@ -1,5 +1,6 @@
 import React from 'react';
 import { LuProjector } from 'react-icons/lu';
+
 export const Cinema = () => {
   return (
     <div className="p-4 shadow-md rounded-md">
@@ -9,4 +10,4 @@ export const Cinema = () => {
       </div>
     </div>
   );
-};
+}

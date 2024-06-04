@@ -9,18 +9,33 @@ import { IoPeople } from 'react-icons/io5';
 import { IoBedOutline } from 'react-icons/io5';
 import { GiBunkBeds } from 'react-icons/gi';
 import { TbBath } from 'react-icons/tb';
-import { Jacuzzi } from '../components/icons/Jacuzzi';
-import { Cinema } from '../components/icons/Cinema';
+
 import Accordion from '../components/Accordion';
 import sousSolPic from '../json/chalet-ss.json';
 import rdcPic from '../json/chalet-rdc.json';
 import etPic1 from '../json/chalet-1.json';
 import etPic2 from '../json/chalet-2.json';
 import extPic from '../json/chalet-ext.json';
-import { VideoGame } from '../components/icons/VideoGame';
-import { Fireplace } from '../components/icons/FirePlace';
-import { Sauna } from '../components/icons/Sauna';
 import Calendar from '../components/CalendarChalet';
+
+import { Safe } from '../components/icons/Safe';
+import { Lift } from '../components/icons/Lift';
+import { Blanchisserie } from '../components/icons/Blanchisserie';
+import { Cinema } from '../components/icons/Cinema';
+import { Cleaning } from '../components/icons/Cleaning';
+import { Concierge } from '../components/icons/Concierge';
+import { ElecCar } from '../components/icons/ElecCar';
+import { FirePlace } from '../components/icons/FirePlace';
+import { FreeBreakfast } from '../components/icons/FreeBreakfast';
+import { FreeParking } from '../components/icons/FreeParking';
+import { FreeSoap } from '../components/icons/FreeSoap';
+import { FreeWifi } from '../components/icons/FreeWifi';
+import { Jacuzzi } from '../components/icons/Jacuzzi';
+import { Sauna } from '../components/icons/Sauna';
+import { Smoking } from '../components/icons/Smoking';
+
+import { VideoGame } from '../components/icons/VideoGame';
+import { WheelChair } from '../components/icons/WheelChair';
 
 export default function Home() {
   return (
@@ -102,7 +117,7 @@ export default function Home() {
               mélodieux du chant des oiseaux et des animaux des bois
               environnants.
             </p>
-            <div className="hidden sm:block">
+            <div className="hidden sm:block mt-12">
               <Calendar />
             </div>
           </div>
@@ -163,11 +178,24 @@ export default function Home() {
         <div>
           <h4 className="text-[25px] mb-2">Equipements</h4>
           <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-2 p-2 mt-4">
-            <Jacuzzi />
+            <Safe />
+            <Lift />
+            <Blanchisserie />
             <Cinema />
-            <VideoGame />
-            <Fireplace />
+            <Cleaning />
+            <Concierge />
+            <ElecCar />
+            <FirePlace />
+            <FreeBreakfast />
+            <FreeParking />
+            <FreeSoap />
+            <FreeWifi />
+            <Jacuzzi />
             <Sauna />
+            <Smoking />
+
+            <VideoGame />
+            <WheelChair />
           </div>
         </div>
       </section>

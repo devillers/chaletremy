@@ -12,18 +12,20 @@ import { GiBunkBeds } from 'react-icons/gi';
 import { TbBath } from 'react-icons/tb';
 import { LuSofa } from 'react-icons/lu';
 import Accordion from '../components/Accordion';
-import { Sauna } from '../components/icons/Sauna';
-import { Jacuzzi } from '../components/icons/Jacuzzi';
-import { Cinema } from '../components/icons/Cinema';
-import { VideoGame } from '../components/icons/VideoGame';
-import { Fireplace } from '../components/icons/FirePlace';
 import Calendar from '../components/CalendarApp';
-
-//import imagesData from '../json/flat.json';
+import { Blanchisserie } from '../components/icons/Blanchisserie';
+import { Concierge } from '../components/icons/Concierge';
+import { FreeWifi } from '../components/icons/FreeWifi';
+import { FreeParking } from '../components/icons/FreeParking';
+import { ElecCar } from '../components/icons/ElecCar';
+import { Pet } from '../components/icons/Pet';
+import { FreeSoap } from '../components/icons/FreeSoap';
+import { TV } from '../components/icons/TV';
+import { WheelChair } from '../components/icons/WheelChair';
+import { Cleaning } from '../components/icons/Cleaning';
+import { Smoking } from '../components/icons/Smoking';
 
 export default function Home() {
-  // const icalUrl =
-  //   'https://www.airbnb.fr/calendar/ical/48092697.ics?s=f5727b76f38ce2964ed998a7962cb7b7';
   return (
     <>
       <section className="relative rounded-sm h-screen md:h-[400px] bg-chalet-pmr bg-cover bg-center flex flex-col justify-center items-center">
@@ -111,7 +113,7 @@ export default function Home() {
               pour un repos bien mérité après une longue journée au grand air.
               Un cadre parfait pour des vacances inoubliables !
             </p>
-            <div className="hidden sm:block">
+            <div className="hidden sm:block mt-12">
               <Calendar />
             </div>
           </div>
@@ -159,8 +161,6 @@ export default function Home() {
               </p>
             </Accordion>
             <Accordion title="L'appartement ">
-              {/* <p> test </p> */}
-
               <Gallery />
             </Accordion>
           </div>
@@ -173,11 +173,17 @@ export default function Home() {
         <div>
           <h4 className="text-[25px] mb-2">Equipements</h4>
           <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-2 p-2 mt-4">
-            <Jacuzzi />
-            <Cinema />
-            <VideoGame />
-            <Fireplace />
-            <Sauna />
+            <Blanchisserie />
+            <Concierge />
+            <FreeWifi />
+            <FreeParking />
+            <ElecCar />
+            <Pet />
+            <FreeSoap />
+            <TV />
+            <WheelChair />
+            <Cleaning />
+            <Smoking />
           </div>
         </div>
       </section>
