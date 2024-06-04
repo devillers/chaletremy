@@ -12,7 +12,7 @@ const Calendar = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await fetch('/api/fetchIcs');
+        const response = await fetch('/api/fetchIcsChalet');
         const icsData = await response.json();
         setEvents(icsData);
       } catch (error) {
@@ -87,7 +87,7 @@ const Calendar = () => {
   };
 
   return (
-    <div className="p-4 max-w-[350px] mx-auto bg-white ">
+    <div className=" max-w-[350px] mx-auto bg-white ">
       <div className="flex justify-between items-center mb-4">
         <button onClick={handlePrevMonth} className=" text-[18px]">
           <FaRegArrowAltCircleLeft />

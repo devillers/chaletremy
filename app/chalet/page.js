@@ -20,6 +20,7 @@ import extPic from '../json/chalet-ext.json';
 import { VideoGame } from '../components/icons/VideoGame';
 import { Fireplace } from '../components/icons/FirePlace';
 import { Sauna } from '../components/icons/Sauna';
+import Calendar from '../components/CalendarChalet';
 
 export default function Home() {
   return (
@@ -90,9 +91,9 @@ export default function Home() {
               <TbBath className="h-[16px] w-[16px] mr-2 text-pink-600 " />9 sdb
             </a>
           </div>
-          <div className="text-[12px] md:text-[13px] mt-4">
+          <div className="text-[12px]  mt-4 grid grid-cols-1 sm:grid-cols-2">
             <p
-              className={`${Cabine.className} tracking-wide p-4 leading-8 text-justify`}
+              className={`${Cabine.className}  mt-7 tracking-wide p-4 leading-8 text-justify`}
             >
               LE CHALET propose une multitude de commodités pour ses hôtes : un
               spa extérieur avec vue imprenable sur le Mont-Blanc, un sauna, une
@@ -101,6 +102,11 @@ export default function Home() {
               mélodieux du chant des oiseaux et des animaux des bois
               environnants.
             </p>
+            <div className="hidden sm:block">
+              <Calendar />
+            </div>
+          </div>
+          <div>
             <Accordion title="INFOS">
               <p
                 className={`${Cabine.className} tracking-wide p-2 leading-8 text-justify`}
@@ -152,15 +158,25 @@ export default function Home() {
         </div>
       </section>
       <section
-        id="about"
-        className={`${Cabine.className}  flex justify-center items-center`}
+        className={`${Cabine.className}  flex justify-center items-center min-w-[350px]`}
       >
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 p-2">
-          <Jacuzzi />
-          <Cinema />
-          <VideoGame />
-          <Fireplace />
-          <Sauna />
+        <div>
+          <h4 className="text-[25px] mb-2">Equipements</h4>
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-2 p-2 mt-4">
+            <Jacuzzi />
+            <Cinema />
+            <VideoGame />
+            <Fireplace />
+            <Sauna />
+          </div>
+        </div>
+      </section>
+      <section
+        className={`${Cabine.className}  flex justify-center items-center mt-8 min-w-[350px]`}
+      >
+        <div className="sm:hidden text-[12px]">
+          <h4 className="text-[25px] mb-2">Disponibilités</h4>
+          <Calendar />
         </div>
       </section>
       <Arrow />

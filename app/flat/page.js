@@ -17,13 +17,13 @@ import { Jacuzzi } from '../components/icons/Jacuzzi';
 import { Cinema } from '../components/icons/Cinema';
 import { VideoGame } from '../components/icons/VideoGame';
 import { Fireplace } from '../components/icons/FirePlace';
-import Calendar from '../components/Calendar';
+import Calendar from '../components/CalendarApp';
 
 //import imagesData from '../json/flat.json';
 
 export default function Home() {
-  const icalUrl =
-    'https://www.airbnb.fr/calendar/ical/48092697.ics?s=f5727b76f38ce2964ed998a7962cb7b7';
+  // const icalUrl =
+  //   'https://www.airbnb.fr/calendar/ical/48092697.ics?s=f5727b76f38ce2964ed998a7962cb7b7';
   return (
     <>
       <section className="relative rounded-sm h-screen md:h-[400px] bg-chalet-pmr bg-cover bg-center flex flex-col justify-center items-center">
@@ -168,11 +168,10 @@ export default function Home() {
       </section>
       {/* Content */}
       <section
-        id="about"
-        className={`${Cabine.className}  flex justify-center items-center`}
+        className={`${Cabine.className}  flex justify-center items-center min-w-[350px]`}
       >
         <div>
-          <h4 className="text-[25px] ml-4 mb-2">Equipements</h4>
+          <h4 className="text-[25px] mb-2">Equipements</h4>
           <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-2 p-2 mt-4">
             <Jacuzzi />
             <Cinema />
@@ -182,8 +181,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="sm:hidden text-[12px]">
-        <Calendar />
+      <section
+        className={`${Cabine.className}  flex justify-center items-center mt-8 min-w-[350px]`}
+      >
+        <div className="sm:hidden text-[12px]">
+          <h4 className="text-[25px] mb-2">Disponibilités</h4>
+          <Calendar />
+        </div>
       </section>
 
       <Arrow />
