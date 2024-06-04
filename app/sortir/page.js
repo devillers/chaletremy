@@ -4,13 +4,6 @@ import VideoPlayer from '../components/VideoBackground';
 import { comforta, Cabine } from '../font';
 import Arrow from '../components/ArrowUp';
 import ArrowDown from '../components/ArrowDown';
-import dynamic from 'next/dynamic';
-import 'leaflet/dist/leaflet.css';
-
-// Dynamically import the MapComponent for client-side rendering
-const DynamicMap = dynamic(() => import('../components/MapComponent'), {
-  ssr: false, // This ensures Leaflet is only rendered on the client side
-});
 
 export default function Sortir() {
   return (
@@ -47,9 +40,7 @@ export default function Sortir() {
         className=" p-6 flex flex-col md:flex-row justify-center items-center leading-6 text-justify overflow-hidden"
       >
         <div className="w-full md:w-1/2 h-1/2 md:h-full flex">
-          <div className="w-full h-full">
-            <DynamicMap address="520 route des communailles, 74170, Saint Gervais les bains " />
-          </div>
+          <div className="w-full h-full">map</div>
         </div>
         <div className="w-full md:w-1/2 h-1/2 md:h-full bg-red-400">empty</div>
       </section>
