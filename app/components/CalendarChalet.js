@@ -87,7 +87,7 @@ const Calendar = () => {
   };
 
   return (
-    <div className=" max-w-[350px] mx-auto bg-white ">
+    <div className=" min-w-[355px] mx-auto bg-white ">
       <div className="flex justify-between items-center mb-4">
         <button onClick={handlePrevMonth} className=" text-[18px]">
           <FaRegArrowAltCircleLeft />

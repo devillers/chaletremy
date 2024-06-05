@@ -220,10 +220,10 @@ export default function Home() {
         </div>
       </section>
       <section
-        className={`${Cabine.className}  flex justify-center items-center mt-8 min-w-[350px]`}
+        className={`${Cabine.className}  flex justify-center items-center mt-8 min-w-[355px]`}
       >
         <div className="sm:hidden text-[12px]">
-          <h4 className="text-[25px] mb-2">Disponibilités</h4>
+          <h4 className="text-[20px] mb-2">Disponibilités</h4>
           <Calendar />
         </div>
       </section>
