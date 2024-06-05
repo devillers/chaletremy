@@ -203,11 +203,11 @@ export default function Home() {
         </div>
       </section>
       <section
-        className={`${Cabine.className}  flex justify-center items-center min-w-[350px] mt-8`}
+        className={`${Cabine.className}  flex justify-center items-center min-w-[350px] mt-4`}
       >
         <div>
           <h4 className="text-[20px] mb-2">Supplément +</h4>
-          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-2 p-2 mt-8">
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-2 p-2 mt-4">
             <Blanchisserie />
             <Cleaning />
             <Concierge />
@@ -223,7 +223,7 @@ export default function Home() {
         className={`${Cabine.className}  flex justify-center items-center mt-8 min-w-[355px]`}
       >
         <div className="sm:hidden text-[12px]">
-          <h4 className="text-[20px] mb-2">Disponibilités</h4>
+          <h4 className="text-[20px] mb-4">Disponibilités</h4>
           <Calendar />
         </div>
       </section>
