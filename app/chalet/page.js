@@ -37,6 +37,12 @@ import { Smoking } from '../components/icons/Smoking';
 import { VideoGame } from '../components/icons/VideoGame';
 import { WheelChair } from '../components/icons/WheelChair';
 
+import { Ski } from '../components/icons/Ski';
+import { Transferts } from '../components/icons/Transferts';
+import { Yoga } from '../components/icons/Yoga';
+import { Chef } from '../components/icons/Chef';
+import { BabySitter } from '../components/icons/BabySitter';
+
 export default function Home() {
   return (
     <>
@@ -176,14 +182,11 @@ export default function Home() {
         className={`${Cabine.className}  flex justify-center items-center min-w-[350px]`}
       >
         <div>
-          <h4 className="text-[25px] mb-2">Equipements</h4>
+          <h4 className="text-[20px] mb-2">Equipements inclus</h4>
           <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-2 p-2 mt-4">
             <Safe />
             <Lift />
-            <Blanchisserie />
             <Cinema />
-            <Cleaning />
-            <Concierge />
             <ElecCar />
             <FirePlace />
             <FreeBreakfast />
@@ -193,9 +196,26 @@ export default function Home() {
             <Jacuzzi />
             <Sauna />
             <Smoking />
-
             <VideoGame />
             <WheelChair />
+            <Ski />
+          </div>
+        </div>
+      </section>
+      <section
+        className={`${Cabine.className}  flex justify-center items-center min-w-[350px] mt-8`}
+      >
+        <div>
+          <h4 className="text-[20px] mb-2">Supplément +</h4>
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-2 p-2 mt-8">
+            <Blanchisserie />
+            <Cleaning />
+            <Concierge />
+
+            <Transferts />
+            <Yoga />
+            <Chef />
+            <BabySitter />
           </div>
         </div>
       </section>

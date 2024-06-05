@@ -24,6 +24,8 @@ import { TV } from '../components/icons/TV';
 import { WheelChair } from '../components/icons/WheelChair';
 import { Cleaning } from '../components/icons/Cleaning';
 import { Smoking } from '../components/icons/Smoking';
+import { Ski } from '../components/icons/Ski';
+import { Transferts } from '../components/icons/Transferts';
 
 export default function Home() {
   return (
@@ -184,6 +186,8 @@ export default function Home() {
             <WheelChair />
             <Cleaning />
             <Smoking />
+            <Ski />
+            <Transferts/>
           </div>
         </div>
       </section>
